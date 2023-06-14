@@ -1,0 +1,327 @@
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #a2b78e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    /* padding-top: 100px; */
+    padding-top: 0px;
+}
+
+p {
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #000000;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 0% 0% -1% 0%;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 2;
+    color: #2c3e50;
+}
+
+section {
+    padding: 20px;
+    margin: 0px 10% 20px 10%; /*0px 150px 20px 150px */
+    width: 80%;
+    background-color: #ffffff;
+}
+
+body.sticky-header {
+    padding-top: 50%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Scrolling Bar */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #83b6b7;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #77a6a7;
+}
+
+/* Section Titles */
+
+.section-header {
+    border: 1px solid #ffffff;
+    margin: 1rem;
+    height: 5vw;
+    /*padding: 2rem;*/
+}
+
+.section-pointer {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    vertical-align: middle;
+    width: 4.8%;
+    height: 100%;
+}
+
+.shape-container {
+    position: relative;
+    /* left: -250px; */
+    width: 50%;
+    height: 100%;
+    /*padding-bottom: 5%; /* 3% */
+    float: left;
+    vertical-align: middle;
+}
+
+.pointer {
+    position: relative;
+    left: 0%;
+    left: -2150%;
+    width: 2300%;
+    height: 400%;
+    background: #e5a951;
+    clip-path: polygon(0 0, 90% 0, 100% 12.5%, 90% 25%, 0 25%);
+}
+
+.section-title-container {
+    /* children 1 */
+    display: inline-block;
+    border: 1px solid #ffffff;
+    vertical-align: middle;
+    /* min-width: 200px; */
+    width: 50%;
+    height: 100%;
+}
+
+.section-title {
+    padding: 1.7% 0% 0% 0%;
+    display: flex;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    line-height: 2;
+    color: #000000;
+}
+
+/* Header and Tabs */
+
+.header_img {
+    background-color: #a2b78e;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#head {
+    /* font-size: 50px; */
+    font-size: 4vw;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.header_tabs {
+    z-index: 99;
+    padding: 10px 0px;
+    background-color: #a2b78e;
+    color: #f3e4cf;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tab {
+    display: inline-block;
+    /* border-style: dashed; */
+    width: 15%;
+    font-size: 1.5vw;
+}
+
+.tab:hover {
+    background-color: #db755c;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 6px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.sticky+.content {
+    padding-top: 9.5%;
+}
+
+/* About Me and Education */
+
+.side-by-side {
+    display: flex;
+    border: 1px solid white;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* text-align: center; */
+    margin: 0 4% 0 4%;
+    padding: 1% 0;
+}
+
+.me-image {
+    position: relative;
+    display: flex;
+    border: 1px solid white;
+    /* padding: 1% 1%; */
+    /* top: 0%; */
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.me-text {
+    position: relative;
+    display: flex;
+    border: 1px solid white;
+    /* padding: 1% 1%; */
+    top: 0%;
+    bottom: 100%;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-image {
+    /* margin: 0% 0% 0% 6%; */
+    top: 163%;
+    left: 65%;
+    position: absolute;
+    border-width: 0%;
+    float: right;
+    /* padding: 5px; */
+}
+
+.edu-text {
+    margin: -1% 0% 2% 5%;
+    /* display:flexbox;
+    background-color: #e5a951; */
+    float: left;
+    width: 55%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vw;/*34px;*/
+}
+
+/* Experience */
+
+.resume_header {
+    margin: 0% 6% 0% 6%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+    font-size: 1.3vw;
+}
+
+#resume_employer {
+    float: left;
+}
+
+#resume_dates {
+    float: right;
+}
+
+.exp-info {
+    margin: 0% 0% 0% 6%;
+    font-size: 1.3vw;
+}
+
+/* Digital Graphics */
+/* .graphic-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid ffffff;
+    width: 100%;
+}
+
+.graphic {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 1%;
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+    height: 100%;
+    width: 92.5%;
+} */
+
+.graphic-grid {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 4% 0 4%;
+    padding: 1% 0;
+    width: 92%;
+    border: 2px solid black;
+    align-content: center;
+}
+
+.graphic {
+    position: relative;
+    float: left;
+    display: flex;
+    /* border: 1px solid black; */
+    left: 7px;
+    max-height: 600px;
+    width: 452px;
+    padding: 1px;
+    /* min-height: 400px; */
+    align-content: center;
+    overflow: hidden;
+}
+
+.instagram-media {
+    position: relative;
+    background:#FFF;
+    border:0;
+    border-radius:3px;
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+    margin: 1px;
+    padding: 0;
+    /* max-width: 540px;
+    min-width: 326px;
+    width: -webkit-calc(100% - 2px);
+    width: calc(100% - 2px); */
+    width: 100%;
+}
