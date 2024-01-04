@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8215ddc6.css",
-    "main.js": "/static/js/main.071774a8.js",
+    "main.js": "/static/js/main.e1bd4793.js",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
     "static/media/UT_Austin_Emblem.png": "/static/media/UT_Austin_Emblem.252e63393a12eb0681dd.png",
@@ -11,7 +11,6 @@
     "static/media/Insta_Reel_Cookie_Wookie.jpg": "/static/media/Insta_Reel_Cookie_Wookie.9e1e673fbbdff774ae4f.jpg",
     "static/media/Insta_Reel_Cranky_Grannys_1.jpg": "/static/media/Insta_Reel_Cranky_Grannys_1.02d6bc8fb4fc8acce4cf.jpg",
     "static/media/Insta_Reel_Chilantro.jpg": "/static/media/Insta_Reel_Chilantro.cad106109022769a4a96.jpg",
-    "static/media/Anna_nyc_edge_2_cropped.jpg": "/static/media/Anna_nyc_edge_2_cropped.8dfd86e9daa92953c25d.jpg",
     "static/media/Anna_nyc_edge_1.jpg": "/static/media/Anna_nyc_edge_1.a252ed67b23ce4200e85.jpg",
     "static/media/Insta_Reel_Ten_Ten.jpg": "/static/media/Insta_Reel_Ten_Ten.e58770f385ba192d9bfc.jpg",
     "static/media/Insta_Reel_Tonys_Jamaican.jpg": "/static/media/Insta_Reel_Tonys_Jamaican.39cdda5c0a42a21cdfdb.jpg",
@@ -33,12 +32,13 @@
     "static/media/Insta_Reel_Salsa_Limon.jpg": "/static/media/Insta_Reel_Salsa_Limon.9979db2dc9487d601956.jpg",
     "static/media/Insta_Reel_La_Popular.jpg": "/static/media/Insta_Reel_La_Popular.2a4346b4e4ea5a4cf87e.jpg",
     "static/media/Insta_Reel_Ciao_Austin.jpg": "/static/media/Insta_Reel_Ciao_Austin.11b0916f47803b9c806f.jpg",
+    "static/media/Anna_Banner.jpg": "/static/media/Anna_Banner.d870a5f237930486c1ad.jpg",
     "index.html": "/index.html",
     "main.8215ddc6.css.map": "/static/css/main.8215ddc6.css.map",
-    "main.071774a8.js.map": "/static/js/main.071774a8.js.map"
+    "main.e1bd4793.js.map": "/static/js/main.e1bd4793.js.map"
   },
   "entrypoints": [
     "static/css/main.8215ddc6.css",
-    "static/js/main.071774a8.js"
+    "static/js/main.e1bd4793.js"
   ]
 }
