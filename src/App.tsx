@@ -18,7 +18,8 @@ import {Experience} from './components/experience';
 // import {SocialMedia} from './components/social_media';
 
 // images to be used
-import galaxy_banner from './content/Anna_nyc_edge_2_cropped.jpg';
+import anna_header_picture from './content/Anna_nyc_edge_2_cropped.jpg';
+import anna_banner from './content/Anna_Banner.jpg';
 import instagram_reel_jade_restaurant from './content/Insta_Reel_Jade_Restaurant.jpg';
 import instagram_reel_lazarus_brew from './content/Insta_Reel_Lazarus_Brewing.jpg';
 import instagram_reel_cranky_granny from './content/Insta_Reel_Cranky_Grannys.jpg';
@@ -262,7 +263,8 @@ function App() {
 
 			{/* Banner and Profile Pictures */}
 			<div className="banner-container">
-				<div className="banner" style={{ backgroundImage: `url(${galaxy_banner})`}}></div>
+				{/* <div className="banner" style={{ backgroundImage: `url(${anna_header_picture})`}}></div> */}
+				<div className="banner" style={{ backgroundImage: `url(${anna_banner})`}}></div>
 				<div className="banner" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
 					<p style={{width: "100%"}}>
 						Design,<br/>
