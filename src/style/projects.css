@@ -1,0 +1,212 @@
+.proj-btn {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, 0.3) 0 0.5rem 0.5rem;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    justify-content: center;
+    line-height: 1;
+    outline: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    transition: all 250ms;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: 2px rgba(255, 255, 255, 0.518) solid;
+}
+
+.proj-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px black solid;
+    margin: 0.5rem;
+}
+
+.proj-btn-link {
+    /* color: white; */
+    text-decoration: none;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+
+.modal-image-content {
+    margin: auto;
+    display: block;
+    height: 70%;
+    max-width: 100vw;
+}
+
+.modal-video-content {
+    margin: 0 auto;
+    display: block;
+    height: 70%;
+    width: 90%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-image-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: relative;
+    display: block;
+    text-align: end;
+    right: 5%;
+    /* top: 0rem;
+    float: right;
+    right: 5rem; */
+    /* float: right; */
+    /* top: 5rem;
+    right: 35px; */
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .proj-btn {
+        font-size: 1.4rem;
+    }
+
+    /* .modal-image-content {
+        border: 1px green dotted;
+        margin: auto;
+        display: block;
+        height: 70%;
+        max-width: 100vw;
+    } */
+
+    .close {
+        font-size: 2rem;
+        right: 0%;
+    }
+
+    .modal-video-content {
+        height: 50%;
+        width: 90%;
+    }
+
+}
+
+/* Responsivity for small-sized window  */
+
+@media only screen and (max-width: 1000px) {
+
+    .proj-btn {
+        font-size: 1rem;
+    }
+
+    .modal-image-content {
+        margin: auto;
+        display: block;
+        /* height: 70%; */
+        height: auto;
+        width: 80%;
+    }
+
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 750px) {
+    .modal-image-content {
+        width: 100%;
+        /* width: auto;
+        height: 100%; */
+    }
+
+    .modal-video-content {
+        height: 25%;
+        width: 90%;
+    }
+
+}
+
+/* Responsivity for extra-small-sized window */
+
+@media only screen and (max-width: 350px) {
+
+    .proj-btn {
+        font-size: 0.4rem;
+        margin: 0;
+    }
+
+    .proj-btn:hover {
+        margin: 0 0.2rem;
+    }
+
+    .close {
+        font-size: 20px;
+        right: 0%;
+    }
+}

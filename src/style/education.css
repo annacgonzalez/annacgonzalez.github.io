@@ -1,0 +1,182 @@
+/* Education */
+
+.edu-side-by-side {
+	/* border: 1px solid red; */
+
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	flex-shrink: 0;
+	margin: 0 4% 0 4%;
+	padding: 1% 0;
+	vertical-align: auto;
+
+	height: 15rem;
+	margin: 1% 8%;
+}
+
+.edu-image-container img {
+	object-fit: contain;
+}
+
+.edu-image-container {
+	/* border: 2px dashed black; */
+	display: flex;
+	height: 100%;
+	width: 39%;
+	float: right;
+	justify-content: center;
+	align-items: center;
+}
+
+.edu-image {
+	border: 2px solid #C05600;
+	height: auto;
+	max-height: 15rem;
+	width: 100%;
+	max-width: 15rem;
+	border-radius: 50%;
+}
+
+.edu-desc-container {
+	/* border: 1px dotted yellow; */
+	display: flex;
+	height: 100%;
+	width: 59%;
+	float: left;
+	justify-content: center;
+	align-items: center;
+}
+
+.edu-desc {
+	/* margin: 2% 0% 5% 2%; */
+	font-size: 2.5rem;
+	color: #ffffff;
+}
+
+.coursework-container {
+    position: relative;
+    /* color: #ffffff; */
+    height: 90%;
+	margin: 5% 10%;
+    /* margin: -3% 4% 0 4%; */
+    /* padding: 1% 0; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.coursework-title {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.coursework {
+    /* font-size: 1.7vw; */
+    font-size: 1.7rem;
+}
+
+.coursework-spacing {
+    margin: 0 0 0.5rem 0;
+}
+
+.coursework-desc {
+    color: #6c6c6c;
+    margin: 0% 0%;
+    font-style: italic;
+    /* font-size: 1.4vw; */
+    font-size: 1.6rem;
+    line-height: 1rem;
+}
+
+/* Resposivity for medium-sized window */
+
+@media only screen and (max-width: 1400px) {
+
+	/* Education */
+
+	.edu-desc {
+		font-size: 1.5rem;
+	}
+
+	.coursework-title {
+        font-size: 1.5rem;
+    }
+
+    .coursework {
+        font-size: 1.5rem;
+    }
+
+    .coursework-desc {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Responsivity for small-sized window  */
+
+@media only screen and (max-width: 1000px) {
+
+	.edu-desc {
+		font-size: 1rem;
+	}
+
+	.coursework-title {
+        font-size: 1.1rem;
+    }
+
+    .coursework {
+        font-size: 1.1rem;
+    }
+
+    .coursework-desc {
+        font-size: 1rem;
+    }
+	
+}
+
+/* Responsivity for extra-small-sized window */
+
+@media only screen and (max-width: 350px) {
+
+	.edu-side-by-side {
+		height: auto;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.edu-desc-container {
+		width: 98%;
+		font-size: 0.70rem;
+	}
+
+	.edu-desc {
+		/* border: 1px dashed red; */
+		position: relative;
+		display: flex;
+		font-size: 0.70rem;
+	}
+
+	.edu-image-container {
+		display: flex;
+		width: 95%;
+	}
+
+	.edu-image {
+		position: relative;
+		/* display: flex; */
+		max-height: 3rem;
+		max-width: 3rem;
+		width: 100%;
+	}
+
+	.coursework-title {
+		font-size: 0.5rem;
+	}
+
+	.coursework {
+		font-size: 0.5rem;
+	}
+
+	.coursework-desc {
+		font-size: 0.5rem;
+	}
+}

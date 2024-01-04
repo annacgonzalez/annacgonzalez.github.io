@@ -1,0 +1,471 @@
+.App {
+	text-align: center;
+}
+
+ul {
+	padding: 0 0 0 5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+	/* margin: 0; */
+	padding: 0;
+	min-width: 0;
+}
+
+/* a {
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+} */
+
+.info-section-container {
+	padding: 2.5% 0;
+}
+
+.page-body-container {
+	background-color: #03cfd5;
+	width: 100%;
+}
+
+.portfolio-content-container {
+	/* background-image: url("./content/James-Webb-Space-Telescope-Image.png") */
+	/* background-color: #ffdb03; */
+	/* background-color: #03cfd5; */
+	/* background-color: #ff463a; */
+	/* background-color: #0eb1b3; */
+}
+
+/* Banner */
+
+.banner-container {
+	height: auto;
+	width: 100%;
+	/* padding-top: min(8rem, 10vw); */
+	padding-top: 1.5%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 1.5%;
+	box-sizing: border-box;
+
+	/* background-color: #03cfd5;  */
+}
+
+.banner {
+	/* border: 1px black dashed; */
+	background-size: cover;
+	height: 40vw;
+	width: 50%;
+}
+
+.banner-tech-section {
+	/* border: 1px yellow dashed; */
+	width: 40%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 33.3%);
+	/* grid-gap: 1rem; */
+}
+
+.banner-tech-icon-container {
+	/* border: 1px red dashed; */
+	text-align: center;
+	font-size: 9.5vw;
+}
+
+.devicon-container {
+	display: flex;
+	/* border: 1px white dotted; */
+	height: 100%;
+	width: 100%;
+	/* padding: 10%; */
+}
+
+.devicon {
+	display: inline-flex;
+	margin: auto;
+	/* border: 1px #92918f dotted; */
+	fill: #0ee2e2;
+	width: 80%;
+	height: 80%;
+}
+
+/* Portfolio Title */
+
+.portfolio-name-container {
+	/* z-index: 50;
+	position: relative;
+	background-color: black;
+	padding: 1% 0;
+	height: auto;
+	width: 100%;
+	left: 0%;
+	text-align: center;
+	font-weight: bold; */
+
+	float: left;
+	display: inline-flex;
+	height: 100%;
+	width: 30%;
+	align-items: center;
+}
+
+.portfolio-name {
+	/* color: #0ee2e2;
+	font-size: calc(2.5vw + 1rem); */
+	height: auto; font-family: sans-serif;
+	font-size: max(1.6vw, 90%);
+	color: white;
+}
+
+/* Header Item */
+
+.portfolio-header {
+
+	/* border: 1px solid yellow; */
+
+	/* main container of nav-tab */
+	z-index: 99;
+	position: relative;
+	height: 8rem;
+	max-height: 7vw;
+	width: 100%;
+	padding: 0 1% 0 1%;
+	background-color: #272727;
+	/* border: 1px solid white; */
+	left: 0%;
+	text-align: center;
+	/* font-size: 30px; */
+	font-weight: bold;
+
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 500px) {
+	.portfolio-name {
+		font-size: 2.5vw;
+	}
+}
+
+/* Navigation Bar */
+
+.nav-bar-container {
+
+	/* border: 1px dashed red; */
+
+	float: right;
+	display: inline-flex;
+	height: 100%;
+	width: 60%;
+	align-items: center;
+}
+
+.nav-bar { /* nav-bar */
+	/* border: 1px solid red; */
+	display: flex;
+	list-style-type: none;
+	/* width: 100%; */
+	height: 100%;
+	max-height: 10vw;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
+	justify-content: end;
+}
+
+.nav-tab-container { /* button holder */
+	display: flex;
+	/* border: 1px solid black; */
+	/* display: inline-block; */
+	width: auto;
+	height: 100%;
+	float: left;
+	/* background-color: #00ff00; */
+	/* font-size: calc(2vw + 1rem); */
+	font-size: 1rem;
+
+	padding: 0 0.5vw;
+}
+
+.nav-social-container { /* button holder */
+	/* border: 1px solid black; */
+	/* display: inline-block; */
+	width: auto;
+	height: 100%;
+	float: left;
+	/* background-color: #00ff00; */
+	/* font-size: calc(2vw + 1rem); */
+}
+
+.nav-inquire-contaier {
+	display: flex;
+	/* border: 1px solid black; */
+	/* display: inline-block; */
+	height: 100%;
+	float: left;
+	/* background-color: #00ff00; */
+	/* font-size: calc(2vw + 1rem); */
+	font-size: 1rem;
+
+	padding: 0 0.5vw;
+
+	position: relative;
+	width: 6vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-inquire-link {
+	text-decoration: none;
+	display: flex;
+	/* border: 1px solid green; */
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.nav-tab { /* button */
+	background-color: #00000000;
+	border: none;
+	/* height is set automatically based on text */
+	height: 100%; /* same size as .sticky + .portfolio-content */
+	width: 100%;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.nav-tab-container .nav-tab {
+	display: block;
+	/* font-size: 1rem; */
+	font-size: max(1.1vw, 90%);
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav-tab-inquire {
+	height: 50%;
+	width: 100%;
+	font-size: max(1.2vw, 100%);
+	border-radius: 3vw;
+	border-width: 0vw;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.nav-tab-inquire:hover {
+	background-color: red;
+}
+
+.nav-tab-container .nav-tab-inquire {
+	display: block;
+	font-size: 1vw;
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav-tab-container .nav-tab:hover {
+	font-size: max(1.2vw, 100%);
+	text-decoration: underline;
+	transition: .125s;
+	/* font-weight: 800; */
+}
+
+.nav-tab-container .nav-tab-inquire:hover {
+	/* background-color: #6e6e6e; */
+	transition: .125s;
+	/* font-weight: 800; */
+	background-color: red;
+}
+
+/* .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+} */
+
+.portfolio-content {
+	/* border: 1px dashed red; */
+	/* padding-top: 1.5%; */
+}
+
+/*/// Section ///*/
+
+.section-title-container {
+	background-color: none;
+	border-radius: 5vw;
+
+	padding-left: 2vw;
+
+	display: flex;
+	align-items: center;
+	width: auto;
+	height: auto;
+	max-height: 15vw;
+	margin-left: 1%;
+}
+
+.section-title {
+	font-size: 4vw;
+}
+
+.section-shape-aligner {
+	display: flex;
+	height: 5rem;
+	max-height: 15vw;
+	width: 20%;
+	max-width: 75rem;
+	float: left;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-pointer-container {
+	/* border: 1px green dashed; */
+	height: 80%;
+	/* max-height: 15vw; */
+	width: 100%;
+}
+
+.section-pointer {
+	height: 400%;
+	width: 100%;
+	background: #e55151;
+	clip-path: polygon(0% 0%, 80% 0%, 100% 12.5%, 80% 25%, 0% 25%);
+}
+
+.section-container {
+	height: auto;
+	width: auto;
+	margin: 0 2%;
+	/* border: 0.1vw solid black; */
+	/* border-radius: 0.5rem; */
+}
+
+/* Responsivity for small-sized window  */
+
+@media only screen and (max-width: 1000px) {
+
+	.nav-tab-container { /* button holder */
+		/* border: 1px dashed yellow; */
+		/* padding: 0 0.15vw; */
+		padding: 0 1.2vw;
+	}
+
+	.nav-tab-container .nav-tab {
+		font-size: 1.5vw;
+		/* color: green; */
+	}
+
+	.nav-tab-inquire {
+		font-size: 1.5vw;
+	}
+
+	/* .nav-tab {
+		height: 10vw;
+		max-height: 80px;
+	}
+
+	.nav-tab-container .nav-tab {
+		font-size: 3vw
+	}
+
+	.nav-bar {
+		display: inline-block;
+		justify-content: none;
+	}
+
+	.sticky + .portfolio-content {
+		padding-top: 10vw;
+	}
+
+	.section-header {
+		height: 3rem;
+	} */
+	
+}
+
+/* Responsivity for extra-small-sized window */
+
+@media only screen and (max-width: 550px) {
+
+	.nav-bar-container {
+		/* border: 1px solid green; */
+		width: 70%;
+	}
+
+	.portfolio-header {
+		/* border: 1px solid blue; */
+	}
+
+	.portfolio-name-container {
+		/* border: 1px dashed red; */
+	}
+
+	.nav-bar {
+		/* border: 1px dashed red; */
+	}
+
+	.nav-tab-container { /* button holder */
+		/* width: 11%; */
+		/* border: 1px dashed yellow; */
+		padding: 0 1.2vw;
+		box-sizing: border-box;
+	}
+
+	.nav-tab-container .nav-tab {
+		font-size: 1.5vw;
+	}
+	
+	.nav-social-container { /* button holder */
+		/* border: 1px dashed yellow; */
+		/* display: inline-block; */
+		width: 11%;
+		height: 100%;
+		float: left;
+		/* background-color: #00ff00; */
+		/* font-size: calc(2vw + 1rem); */
+		box-sizing: border-box;
+	}
+
+	.nav-inquire-contaier {
+		display: none;
+		/* border: 1px dashed yellow; */
+		width: 11%;
+		box-sizing: border-box;
+	}
+
+	.nav-inquire-container {
+		display: none;
+		/* border: 1px solid orange; */
+		/* height: 1vw; */
+	}
+
+	.nav-tab-inquire {
+		display: none;
+	}
+
+	.nav-inquire-link {
+		display: none;
+	}
+
+	/* .nav-tab-container {
+		width: 50%;
+		max-width: 225px;
+	}
+
+	.nav-tab-container .nav-tab {
+		font-size: 4vw;
+	}
+
+	.sticky + .portfolio-content {
+		padding-top: 20vw;
+	} */
+
+}

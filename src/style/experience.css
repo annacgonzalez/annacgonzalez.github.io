@@ -1,0 +1,111 @@
+.exp {
+    margin: 3% 0 0 0;
+}
+
+.exp-sub-desc {
+    font-weight: bold;
+}
+
+.exp-info-list {
+    /* margin-left: 3%; */
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.exp-info-elem {
+    padding: 5px 0px;
+    line-height: 120%;
+}
+
+.exp-info-list .exp-info-elem {
+    padding: 1% 0px;
+}
+
+.show-resume-button {
+    border: 0;
+    padding: 1vw;
+}
+
+.show-resume-button:hover {
+    background-color: grey;
+}
+
+.resume-header {
+    margin: 0% 6% 0% 6%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2vw solid #000000;
+    padding-bottom: 0.5vw;
+    font-size: 1.7rem;
+    /* font-size: 1.7vw; */
+    /* color: #ffffff; */
+}
+
+#resume-employer-container {
+    float: left;
+}
+
+#resume-dates {
+    float: right;
+}
+
+.resume-employer {
+    font-weight: bold;
+}
+
+.resume-location {
+    font-style: italic;
+}
+
+.exp-info {
+    width: 90%;
+    padding: 0;
+    margin: 0% 0% 0% 6%;
+    font-size: 1.7rem; /* 1.5vw */
+    /* color: #ffffff; */
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .resume-header {
+        font-size: 1.5rem;
+    }
+
+    .exp-info {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Responsivity for small-sized window  */
+
+@media only screen and (max-width: 1000px) {
+
+    .resume-header {
+        font-size: 1.1rem;
+    }
+
+    .exp-info {
+        font-size: 1rem;
+    }
+	
+}
+
+/* Responsivity for extra-small-sized window */
+
+@media only screen and (max-width: 350px) {
+
+    .resume-header {
+        font-size: 0.5rem;
+    }
+
+    .exp-info {
+        font-size: 0.5rem;
+    }
+
+    .exp-info-elem {
+        padding: 5px 0px;
+        line-height: 120%;
+    }
+
+}
