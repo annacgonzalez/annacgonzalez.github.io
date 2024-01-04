@@ -54,9 +54,20 @@ function App() {
 
 	const resume_arr = [
 		JSON.stringify({
+			"employer": "The Carlson Lawfirm",
+			"location": "Austin, TX",
+			"duration": "July 2023 – Present",
+			"position": "Paralegal",
+			"description": [
+				"Assist attorneys in personal injury cases.",
+				"Write and revise legal demands.",
+				"Provide support to clients that desire to be represented by the Carlson Lawfirm."
+			]
+		}),
+		JSON.stringify({
 			"employer": "Yelp",
 			"location": "Austin, TX",
-			"duration": "February 2022 – Present",
+			"duration": "February 2022 – July 2023",
 			"position": "Community & Marketing Intern",
 			"description": [
 				"Co-planned more than 20+ events for the Yelp Austin Community for over 2,000 Yelp Elites",
@@ -252,6 +263,13 @@ function App() {
 			{/* Banner and Profile Pictures */}
 			<div className="banner-container">
 				<div className="banner" style={{ backgroundImage: `url(${galaxy_banner})`}}></div>
+				<div className="banner" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
+					<p style={{width: "100%"}}>
+						Design,<br/>
+						Create,<br/>
+						Post!<br/>
+					</p>
+				</div>
 			</div>
 
 			<div className="portfolio-content-container">
@@ -281,9 +299,7 @@ function App() {
 												<div className="me-desc" style={{fontStyle: "italic"}}>B.S. in Political Communications</div>
 												<div className="me-desc" style={{fontStyle: "italic"}}>B.A. in Rhetoric & Writing</div>
 												<div className="me-desc" style={{fontStyle: "italic"}}>
-													Hello, I am a recent college graduate with degree in Software Engineering and a strong
-													foundation in hardware. I believe that a good program doesn't need fancy parts, but rather
-													efficient code and metal components that work co-dependently to solve a problem effectively.
+													Hello, I am a recent college graduate with degree in Political Communications and Rhetoric & Writing.
 												</div>
 											</div>
 										</div>
@@ -313,9 +329,10 @@ function App() {
 										</div>
 										<div className="edu-desc-container">
 											<div className="edu-desc">
-												I recently received a Bachelor's in Electrical & Computer Engineering
-												from the University of Texas at Austin with a technical focus in
-												Software Engineering.
+												I recently received a Bachelor of Science in Political Communications
+												and a Bachelor of Arts in Rhetoric & Writing
+												from the University of Texas at Austin. I graduated with Honors and
+												currently getting ready to apply to Law School.
 											</div>
 										</div>
 									</div>

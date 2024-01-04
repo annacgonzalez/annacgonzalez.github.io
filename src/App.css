@@ -54,14 +54,23 @@ button {
 	padding-bottom: 1.5%;
 	box-sizing: border-box;
 
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 10vw;
+	color: white;
 	/* background-color: #03cfd5;  */
+
+	display: flex;
 }
 
 .banner {
+	flex: 1;
+	display: inline-block;
 	/* border: 1px black dashed; */
 	background-size: cover;
 	height: 40vw;
 	width: 50%;
+	/* box-sizing: border-box; */
 }
 
 .banner-tech-section {
