@@ -48,6 +48,7 @@ import instagram_reel_tenten from './content/Insta_Reel_Ten_Ten.jpg';
 import instagram_reel_tonys_jamaican from './content/Insta_Reel_Tonys_Jamaican.jpg';
 import instagram_reel_Yelp_Review_2022 from './content/Insta_Reel_Yelp_Review_2022.jpg';
 import instagram_reel_boxt from './content/Insta_Reel_Boxt.jpg';
+import { SocialMedia } from './components/social_media';
 
 function App() {
 
@@ -263,15 +264,15 @@ function App() {
 
 			{/* Banner and Profile Pictures */}
 			<div className="banner-container">
-				{/* <div className="banner" style={{ backgroundImage: `url(${anna_header_picture})`}}></div> */}
+				<div className="banner" style={{ backgroundImage: `url(${anna_header_picture})`}}></div>
 				<div className="banner" style={{ backgroundImage: `url(${anna_banner})`}}></div>
-				<div className="banner" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
+				{/* <div className="banner" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
 					<p style={{width: "100%"}}>
 						Design,<br/>
 						Create,<br/>
 						Post!<br/>
 					</p>
-				</div>
+				</div> */}
 			</div>
 
 			<div className="portfolio-content-container">
@@ -403,13 +404,13 @@ function App() {
 									<Experience
 										jobs={ resume_cont }
 									/>
-									<div id="projects"></div>
 								</>
 							}
 						/>
 					</div>
 
 					{/* Projects */}
+					<div id="projects"></div>
 					<div className="info-section-container" style={{backgroundColor: "#ffffff"}}>
 						<InfoSection
 							section_title={
@@ -420,290 +421,180 @@ function App() {
 								})
 							}
 							section_content={
-								<>
-									<section className="post-list">
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_jade_restaurant, "Jade Restaurant", "@jaderestaurantatx: Asian Cuisine 🥟")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CshnJgCPs7a/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_lazarus_brew, "Lazarus Brewing", "@lazarusbrewing: Brewpub, Tacos, Coffee and more! 🌮🍺")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CsRv3wJJ0s0/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_cranky_granny, "Cranky Granny's", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cr_1vaJJnff/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_bouquet_building, "Florecita", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/ClUXgS8J2kL/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_chilantro, "Chilantro", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CmKSZKbpy47/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_ciao_austin, "Ciao Austin", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CrrJrivJRbS/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_cinnaholic, "Cinnaholic", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CmfYIRKh53f/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_cookie_wookie, "Cookie Wookie", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CmCX77gpliV/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_cranky_granny_1, "Cranky Granny's", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CnaddfmBs-O/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_crawfish_boil, "Crawfish Boil", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CrtYxbRJhRE/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_east_side_golf, "East Side Golf", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CkJq3U2J1gU/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_fairways, "Fairways Cantina", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CjB6A9dPHW2/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_fat_city_stacks, "Fat City Stacks", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CkPMF_TpBiZ/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_islas_canarias, "Islas Canarias", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/ClHzqPys5EF/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_la_popular, "La Popular", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CreSeIapjUH/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_moic, "Museum of Ice Cream", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cj3DaMFLlRS/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_omg_squee, "OMG Squee", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Clbo-6NJfx4/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_peach_bum, "Peach Bum", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cko3FCQNqEP/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_salsa_limon, "Salsa Limon", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CqJOxuhJwtL/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_san_pellegrino, "San Pellegrino", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cpp2vzLjVpH/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_stride, "Stride", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CmPWgLsJrKO/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_surreal_garden, "Surreal Garden", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cq6RViPtUyp/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_sweet_water_oysters, "Sweet Water Oyster", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CpGgSljJdRd/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_taquero_mucho, "Taquero Mucho", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/ClEvNUDJ3GX/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_tenten, "TenTen", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CrrJrivJRbS/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_tonys_jamaican, "Tony's Jamaican", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/CnPiH0GBN0t/"
-												target="_blank">
-											</a>
-										</div>
-
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_boxt, "Boxt", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cn77-NZpEGs/"
-												target="_blank">
-											</a>
-										</div>
-										
-										<div className="post" style={{boxSizing: "border-box"}}>
-											{instagram_embed_foramtter(instagram_reel_Yelp_Review_2022, "Yelp Review 2022", "")}
-											<a
-												rel="noreferrer"
-												className="post-overlay"
-												href="https://www.instagram.com/reel/Cm2Oc7rhWPf/"
-												target="_blank">
-											</a>
-										</div>
-									</section>
-								</>
+								<SocialMedia
+									media={
+										[
+											JSON.stringify({
+												"thumbnail": instagram_reel_jade_restaurant.toString(),
+												"title": "Jade Restaurant",
+												"text": "@jaderestaurantatx: Asian Cuisine 🥟",
+												"url": "https://www.instagram.com/reel/CshnJgCPs7a/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_lazarus_brew.toString(),
+												"title": "Lazarus Brewing",
+												"text": "@lazarusbrewing: Brewpub, Tacos, Coffee and more! 🌮🍺",
+												"url": "https://www.instagram.com/reel/CsRv3wJJ0s0/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_cranky_granny.toString(),
+												"title": "Cranky Granny's",
+												"text": "",
+												"url": "https://www.instagram.com/reel/Cr_1vaJJnff/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_bouquet_building.toString(),
+												"title": "Florecita",
+												"description": "",
+												"url": "https://www.instagram.com/reel/ClUXgS8J2kL/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_chilantro.toString(),
+												"title": "Chilantro",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CmKSZKbpy47/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_ciao_austin.toString(),
+												"title": "Ciao Austin",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CrrJrivJRbS/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_cinnaholic.toString(),
+												"title": "Cinnaholic",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CmfYIRKh53f/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_cookie_wookie.toString(),
+												"title": "Cookie Wookie",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CmCX77gpliV/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_cranky_granny_1.toString(),
+												"title": "Cranky Granny's New Location",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CnaddfmBs-O/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_crawfish_boil.toString(),
+												"title": "Crawfish Boil",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CrtYxbRJhRE/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_east_side_golf.toString(),
+												"title": "East Side Golf",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CkJq3U2J1gU/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_fairways.toString(),
+												"title": "Fairways Cantina",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CjB6A9dPHW2/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_fat_city_stacks.toString(),
+												"title": "Fat City Stacks",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CkPMF_TpBiZ/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_islas_canarias.toString(),
+												"title": "Islas Canarias",
+												"description": "",
+												"url": "https://www.instagram.com/reel/ClHzqPys5EF/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_la_popular.toString(),
+												"title": "La Popular",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CreSeIapjUH/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_moic.toString(),
+												"title": "Museum of Ice Cream",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cj3DaMFLlRS/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_omg_squee.toString(),
+												"title": "OMG Squee",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Clbo-6NJfx4/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_peach_bum.toString(),
+												"title": "Peach Bum",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cko3FCQNqEP/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_salsa_limon.toString(),
+												"title": "Salsa Limon",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CqJOxuhJwtL/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_san_pellegrino.toString(),
+												"title": "San Pellegrino",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cpp2vzLjVpH/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_stride.toString(),
+												"title": "Stride",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CmPWgLsJrKO/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_surreal_garden.toString(),
+												"title": "Surreal Garden",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cq6RViPtUyp/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_sweet_water_oysters.toString(),
+												"title": "Sweet Water Oyster",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CpGgSljJdRd/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_taquero_mucho.toString(),
+												"title": "Taquero Mucho",
+												"description": "",
+												"url": "https://www.instagram.com/reel/ClEvNUDJ3GX/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_tenten.toString(),
+												"title": "TenTen",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CrrJrivJRbS/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_tonys_jamaican.toString(),
+												"title": "Tony's Jamaican",
+												"description": "",
+												"url": "https://www.instagram.com/reel/CnPiH0GBN0t/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_boxt.toString(),
+												"title": "Boxt",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cn77-NZpEGs/"
+											}),
+											JSON.stringify({
+												"thumbnail": instagram_reel_Yelp_Review_2022.toString(),
+												"title": "Yelp Review 2022",
+												"description": "",
+												"url": "https://www.instagram.com/reel/Cm2Oc7rhWPf/"
+											})
+										]
+									}
+								/>
 							}
 						/>
 					</div>
@@ -711,7 +602,20 @@ function App() {
 					{/* Social Media */}
 					<div id="socials"></div>
 					<div className="info-section-container">
-						{/* hello */}
+						<InfoSection
+							section_title={
+								JSON.stringify({
+									"text": "How it works",
+									"font-family": "",
+									"font-size": ""
+								})
+							}
+							section_content={
+								<>
+									<p style={{width: "100%", textAlign: "center"}}>[insert graphics here]</p>
+								</>
+							}
+						/>
 					</div>
 
 				</div>
@@ -719,75 +623,6 @@ function App() {
 
 		</div>
 	);
-}
-
-function instagram_embed_foramtter(content_thumbnail:string, content_alt:string, content_desc:string) {
-
-	// console.log("background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);")
-	// console.log(parseInlineStyle("background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"));
-
-
-	return(
-		<>
-			{/* #FFF */}
-			<div
-				style={parseInlineStyle("background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);")}>
-				<div
-					style={parseInlineStyle("padding:8px;")}>
-						{/* background:#F8F8F8 */}
-					<div
-						style={parseInlineStyle("background:#F8F8F8; line-height:0; margin-top:40px; padding:0.0% 0; text-align:center; width:100%;")}>
-						
-						<img className='social-media-content' alt={content_alt} style={{height: "auto", width: "100%"}} src={content_thumbnail}></img>
-						
-					</div>
-					<p
-						style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;")}>
-						<a
-							rel="noreferrer"
-							href="https://www.instagram.com/p/BGUPwmztyzw/"
-							style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;")}
-							target="_blank">
-							{content_desc}
-						</a>
-					</p>
-				</div>
-			</div>
-			{/* <script async defer src="//platform.instagram.com/en_US/embeds.js"></script> */}
-
-		</>
-	)
-}
-
-function parseInlineStyle(style: string) {
-    const template = document.createElement('template');
-    template.setAttribute('style', style);
-
-    const jsonStyling:any = Object.entries(template.style)
-        .filter(([ key ]) => !/^[0-9]+$/.test(key))
-        .filter(([ , value ]) => Boolean(value))
-        .reduce((acc, [ key, value ]) => ({ ...acc, [key]: value }), {});
-
-	// fix non-existent fields
-	replaceJsonElem(jsonStyling, "webkitBackgroundClip", "WebkitBackgroundClip");
-	replaceJsonElem(jsonStyling, "webkitBackgroundOrigin", "WebkitBackgroundOrigin");
-	replaceJsonElem(jsonStyling, "webkitBackgroundSize", "WebkitBackgroundSize");
-	replaceJsonElem(jsonStyling, "webkitBorderBottomLeftRadius", "WebkitBorderBottomLeftRadius");
-	replaceJsonElem(jsonStyling, "webkitBorderBottomRightRadius", "WebkitBorderBottomRightRadius");
-	replaceJsonElem(jsonStyling, "webkitBorderRadius", "WebkitBorderRadius");
-	replaceJsonElem(jsonStyling, "webkitBorderTopLeftRadius", "WebkitBorderTopLeftRadius");
-	replaceJsonElem(jsonStyling, "webkitBoxShadow", "WebkitBoxShadow");
-	replaceJsonElem(jsonStyling, "webkitBorderTopRightRadius", "WebkitBorderTopRightRadius");
-
-	return jsonStyling;
-}
-
-function replaceJsonElem(jsonData:any, oldJsonKey:String, newJsonKey:String) {
-	if(jsonData[String(oldJsonKey)]) {
-		var curr_json_val = jsonData[String(oldJsonKey)]; // or data['oldKey']
-		jsonData[String(newJsonKey)] = curr_json_val;
-		delete jsonData[String(oldJsonKey)];
-	}
 }
 
 export default App;

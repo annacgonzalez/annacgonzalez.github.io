@@ -82,68 +82,89 @@ const logos = {
 
 function SocialMedia({ media }: MediaProp) {
 
-	// console.log(media);
-
 	return (
-		<div className="media-wrapper">
-			<div className="media-grid">
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jan-carlos-rubio-sanchez/">
-					{logos["linkedin"]}
-					<span className="media-link">
-						in/jan-carlos-rubio-sanchez
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://twitter.com/Programmed_Bean">
-					{logos["twitter"]}
-					<span className="media-link">
-						@Programmed_Bean
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://github.com/jcr4698">
-					{logos["github"]}
-					<span className="media-link">
-						jcr4698
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://codepen.io/jcr4698">
-					{logos["codepen"]}
-					<span className="media-link">
-						jcr4698
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://www.facebook.com/alanjan.rubio">
-					{logos["facebook"]}
-					<span className="media-link">
-						jan.rubio
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="mailto:jcaj750@gmail.com">
-					{logos["email"]}
-					<span className="media-link">
-						jcaj750@gmail.com
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://www.instagram.com/jancarlosrubiosanchez">
-					{logos["instagram"]}
-					<span className="media-link">
-						jancarlosrubiosanchez
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://discordapp.com/users/242057894730792961">
-					{logos["discord"]}
-					<span className="media-link">
-						programmedbean
-					</span>
-				</a>
-				<a className="media-container" target="_blank" rel="noreferrer" href="https://scratch.mit.edu/users/JanDaNerd/">
-					{logos["scratch"]}
-					<span className="media-link">
-						JanDaNerd
-					</span>
-				</a>
-			</div>
-		</div>
+		<>
+			<section className="post-list">
+				{
+					media.map((media_content) => {
+						const content = JSON.parse(media_content);
+						return(
+							<div className="post" style={{ boxSizing: "border-box" }}>
+								{instagram_embed_foramtter(content["thumbnail"], content["title"], content["text"])}
+								<a
+									rel="noreferrer"
+									className="post-overlay"
+									href={content["url"]}
+									target="_blank">
+								</a>
+							</div>
+						)
+					})
+				}
+			</section>
+		</>
 	)
+}
+
+function instagram_embed_foramtter(content_thumbnail:string, content_alt:string, content_desc:string) {
+
+	return(
+		<>
+			<div
+				style={parseInlineStyle("background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);")}>
+				<div
+					style={parseInlineStyle("padding:8px;")}>
+					<div
+						style={parseInlineStyle("background:#F8F8F8; line-height:0; margin-top:40px; padding:0.0% 0; text-align:center; width:100%;")}>
+						
+						<img className='social-media-content' alt={content_alt} style={{height: "auto", width: "100%"}} src={content_thumbnail}></img>
+						
+					</div>
+					<p
+						style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;")}>
+						<a
+							rel="noreferrer"
+							href="https://www.instagram.com/p/BGUPwmztyzw/"
+							style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;")}
+							target="_blank">
+							{content_desc}
+						</a>
+					</p>
+				</div>
+			</div>
+		</>
+	)
+}
+
+function parseInlineStyle(style: string) {
+    const template = document.createElement('template');
+    template.setAttribute('style', style);
+
+    const jsonStyling:any = Object.entries(template.style)
+        .filter(([ key ]) => !/^[0-9]+$/.test(key))
+        .filter(([ , value ]) => Boolean(value))
+        .reduce((acc, [ key, value ]) => ({ ...acc, [key]: value }), {});
+
+	// fix non-existent fields
+	replaceJsonElem(jsonStyling, "webkitBackgroundClip", "WebkitBackgroundClip");
+	replaceJsonElem(jsonStyling, "webkitBackgroundOrigin", "WebkitBackgroundOrigin");
+	replaceJsonElem(jsonStyling, "webkitBackgroundSize", "WebkitBackgroundSize");
+	replaceJsonElem(jsonStyling, "webkitBorderBottomLeftRadius", "WebkitBorderBottomLeftRadius");
+	replaceJsonElem(jsonStyling, "webkitBorderBottomRightRadius", "WebkitBorderBottomRightRadius");
+	replaceJsonElem(jsonStyling, "webkitBorderRadius", "WebkitBorderRadius");
+	replaceJsonElem(jsonStyling, "webkitBorderTopLeftRadius", "WebkitBorderTopLeftRadius");
+	replaceJsonElem(jsonStyling, "webkitBoxShadow", "WebkitBoxShadow");
+	replaceJsonElem(jsonStyling, "webkitBorderTopRightRadius", "WebkitBorderTopRightRadius");
+
+	return jsonStyling;
+}
+
+function replaceJsonElem(jsonData:any, oldJsonKey:String, newJsonKey:String) {
+	if(jsonData[String(oldJsonKey)]) {
+		var curr_json_val = jsonData[String(oldJsonKey)];
+		jsonData[String(newJsonKey)] = curr_json_val;
+		delete jsonData[String(oldJsonKey)];
+	}
 }
 
 export { SocialMedia };
