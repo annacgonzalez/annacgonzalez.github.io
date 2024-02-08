@@ -32,26 +32,17 @@ function instagram_embed_foramtter(content_thumbnail:string, content_alt:string,
 
 	return(
 		<>
-			<div
-				style={parseInlineStyle("background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);")}>
-				<div
-					style={parseInlineStyle("padding:8px;")}>
-					<div
-						style={parseInlineStyle("background:#F8F8F8; line-height:0; margin-top:40px; padding:0.0% 0; text-align:center; width:100%;")}>
-						
-						<img className='social-media-content' alt={content_alt} style={{height: "auto", width: "100%"}} src={content_thumbnail}></img>
-						
+			<div className="social-media-container">
+				<div className="social-media">
+					<div className="social-media-content-container" style={parseInlineStyle("text-align:center;")}>
+						<img className="social-media-content" alt={content_alt} src={content_thumbnail}></img>
 					</div>
-					<p
-						style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;")}>
-						<a
-							rel="noreferrer"
-							href="https://www.instagram.com/p/BGUPwmztyzw/"
-							style={parseInlineStyle("color:#c9c8cd; font-family:Arial,sans-serif; font-size:1rem; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;")}
-							target="_blank">
+					{/* <div className="social-media-caption-container"> */}
+						<p className="social-media-caption">
 							{content_desc}
-						</a>
-					</p>
+						</p>
+					{/* </div> */}
+					
 				</div>
 			</div>
 		</>

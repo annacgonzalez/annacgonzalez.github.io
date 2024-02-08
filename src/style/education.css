@@ -1,8 +1,6 @@
 /* Education */
 
-.edu-side-by-side {
-	/* border: 1px solid red; */
-
+.edu-side-by-side-container {
 	position: relative;
 	display: flex;
 	overflow: hidden;
@@ -11,7 +9,10 @@
 	padding: 1% 0;
 	vertical-align: auto;
 
-	height: 15rem;
+	justify-content: center;
+	align-items: center;
+
+	height: auto;
 	margin: 1% 8%;
 }
 
@@ -19,85 +20,126 @@
 	object-fit: contain;
 }
 
-.edu-image-container {
-	/* border: 2px dashed black; */
+/* .edu-image-container {
 	display: flex;
 	height: 100%;
-	width: 39%;
+	width: auto;
 	float: right;
 	justify-content: center;
 	align-items: center;
+} */
+
+.edu-image-container {
+	margin-right: 1vw;
+	display: flex;
+	flex-shrink: 0;
+	align-self: center;
+	float: left;
+	width: auto;
+  	height: 100%;
+	shape-outside: circle(50%);
 }
 
 .edu-image {
-	border: 2px solid #C05600;
+	/* border: 0.2vw solid #C05600; */
 	height: auto;
-	max-height: 15rem;
-	width: 100%;
-	max-width: 15rem;
+	/* height: clamp(20vw, 30rem, 30vw);
+	width: clamp(20vw, 30rem, 30vw); */
+	height: clamp(10vw, 15rem, 30vw);
+	width: clamp(10vw, 15rem, 30vw);
 	border-radius: 50%;
 }
 
-.edu-desc-container {
+.edu-side-by-side {
+	/* background-color: green; */
 	/* border: 1px dotted yellow; */
-	display: flex;
-	height: 100%;
-	width: 59%;
-	float: left;
+	
+	height: auto;
+	/* min-height: 23vw; */
+	width: auto; /* 59% */
+	/* float: left; */
+
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
+}
+
+.edu-desc-container {
+	height: auto;
+	padding-left: 10%;
 }
 
 .edu-desc {
+	/* position: relative; */
+	/* height: auto; */
+	margin: 0;
+	/* margin-left: clamp(10vw, 7.5rem, 30vw); */
+	/* width: 80%; */
+	/* background-color: pink; */
 	/* margin: 2% 0% 5% 2%; */
-	font-size: 2.5rem;
+	/* font-size: 2.5rem; */
+	/* background-color: blue; */
+	font-size: clamp(1.3vw, 2.5rem, 5vw);
 	color: #ffffff;
+	/* text-align: center; */
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.coursework-container {
+/* .coursework-container {
     position: relative;
-    /* color: #ffffff; */
     height: 90%;
 	margin: 5% 10%;
-    /* margin: -3% 4% 0 4%; */
-    /* padding: 1% 0; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+} */
 
-.coursework-title {
+/* .coursework-title {
     font-size: 200%;
     font-weight: bold;
-}
+} */
 
-.coursework {
-    /* font-size: 1.7vw; */
+/* .coursework {
     font-size: 1.7rem;
-}
+} */
 
-.coursework-spacing {
+/* .coursework-spacing {
     margin: 0 0 0.5rem 0;
-}
+} */
 
-.coursework-desc {
+/* .coursework-desc {
     color: #6c6c6c;
     margin: 0% 0%;
     font-style: italic;
-    /* font-size: 1.4vw; */
     font-size: 1.6rem;
     line-height: 1rem;
+} */
+
+@media only screen and (min-width: 1900px) {
+
+	/* .edu-side-by-side {
+		background-color: blue;
+	} */
+	
+	.edu-desc-container {
+		padding-left: 0%;
+		height: clamp(10vw, 15rem, 30vw);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 /* Resposivity for medium-sized window */
-
 @media only screen and (max-width: 1400px) {
 
-	/* Education */
+	/* .edu-side-by-side {
+		background-color: yellow;
+	} */
 
 	.edu-desc {
-		font-size: 1.5rem;
+		font-size: clamp(2.5vw, 1.5rem, 5vw);
 	}
 
-	.coursework-title {
+	/* .coursework-title {
         font-size: 1.5rem;
     }
 
@@ -107,19 +149,24 @@
 
     .coursework-desc {
         font-size: 1.4rem;
-    }
+    } */
 
 }
 
 /* Responsivity for small-sized window  */
-
 @media only screen and (max-width: 1000px) {
 
+	/* .edu-side-by-side {
+		background-color: orange;
+	} */
+
 	.edu-desc {
-		font-size: 1rem;
+		/* font-size: clamp(2vw, 1rem, 4vw); */
+		font-size: max(2.3vw, 1.1rem);
+		/* font-size: max(3vw, 1.5rem); */
 	}
 
-	.coursework-title {
+	/* .coursework-title {
         font-size: 1.1rem;
     }
 
@@ -129,46 +176,58 @@
 
     .coursework-desc {
         font-size: 1rem;
-    }
+    } */
 	
 }
 
 /* Responsivity for extra-small-sized window */
-
 @media only screen and (max-width: 350px) {
 
+	/* .edu-side-by-side {
+		background-color: red;
+	} */
+
+	.edu-side-by-side-container {
+		height: auto;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
 	.edu-side-by-side {
+		width: auto;
+		font-size: 0.70rem;
+
 		height: auto;
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
 	.edu-desc-container {
-		width: 98%;
-		font-size: 0.70rem;
+		height: auto;
+		padding-left: 0;
 	}
 
 	.edu-desc {
-		/* border: 1px dashed red; */
 		position: relative;
 		display: flex;
-		font-size: 0.70rem;
+		/* font-size: max(1vw, 0.7rem); */
+		/* font-size: clamp(1vw, 0.7rem, 3vw); */
+		font-size: clamp(1vw, 0.70rem, 10vw);
 	}
 
 	.edu-image-container {
-		display: flex;
-		width: 95%;
+		/* display: flex; */
+		width: auto;
 	}
 
 	.edu-image {
 		position: relative;
-		/* display: flex; */
-		max-height: 3rem;
-		max-width: 3rem;
+		max-height: 100vw;
+		max-width: 100vw;
 		width: 100%;
 	}
 
-	.coursework-title {
+	/* .coursework-title {
 		font-size: 0.5rem;
 	}
 
@@ -178,5 +237,5 @@
 
 	.coursework-desc {
 		font-size: 0.5rem;
-	}
+	} */
 }

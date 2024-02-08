@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 // stylesheets
 import './App.css';
+import './style/nav_bar.css';
 import './style/about_me.css';
 import './style/education.css';
 import './style/experience.css';
@@ -16,6 +17,7 @@ import {InfoSection} from './components/section';
 import {Experience} from './components/experience';
 // import {Projects} from './components/projects';
 // import {SocialMedia} from './components/social_media';
+import * as logos from './components/logos';
 
 // images to be used
 import anna_header_picture from './content/Anna_nyc_edge_2_cropped.jpg';
@@ -51,6 +53,8 @@ import instagram_reel_boxt from './content/Insta_Reel_Boxt.jpg';
 import { SocialMedia } from './components/social_media';
 
 function App() {
+
+	console.log(logos.twitter);
 
 	const [resume_cont, setResume_cont] = useState([]);
 
@@ -144,19 +148,58 @@ function App() {
 		})
 	];
 
-	const navbarOffset = useRef(0);
+	// const navbarWidth = useRef(0);
+	const options_visible = useRef(false);
 
 	useEffect(() => {
+		const curr_nav_title = document.getElementById("nav-tab-title");
+		const curr_nav_tabs = document.getElementById("nav-tab-wrapper");
+		const curr_nav_settings = document.getElementById("nav-hamburger-settings");
+
+		if(curr_nav_title && curr_nav_tabs && curr_nav_settings) {
+			if(curr_nav_title.offsetWidth + 50 >= curr_nav_tabs.offsetLeft) {
+				curr_nav_tabs.style.visibility = "hidden";
+				curr_nav_settings.style.display = "flex";
+			}
+			else {
+				curr_nav_tabs.style.visibility = "visible";
+				curr_nav_settings.style.display = "none";
+			}
+		}
+	}, []);
+
+	useEffect(() => {
+
+		const nav_hamb_opt = document.getElementById("nav-hamburger-options");
+		if(nav_hamb_opt) {
+			if(options_visible.current) {
+				nav_hamb_opt.style.display = "";
+			}
+			else {
+				nav_hamb_opt.style.display = "none";
+			}
+		}
+		
 		window.addEventListener("resize", () => {
 
-			// assign value of navbar offset based on static element
-			const portfolio_title = document.getElementById("pre-tabs-static");
-			if(portfolio_title) {
-				const title_offset = portfolio_title.offsetTop;
-				const title_height = portfolio_title.offsetHeight;
-				const title_margin = Number.parseFloat(window.getComputedStyle(portfolio_title).marginTop);
+			const curr_nav_title = document.getElementById("nav-tab-title");
+			const curr_nav_tabs = document.getElementById("nav-tab-wrapper");
+			const curr_nav_tabs_vertical = document.getElementById("nav-hamburger-options");
+			const curr_nav_settings = document.getElementById("nav-hamburger-settings");
 
-				navbarOffset.current = title_offset + title_height + title_margin;
+			if(curr_nav_title && curr_nav_tabs && curr_nav_settings && curr_nav_tabs_vertical) {
+				if(curr_nav_title.offsetWidth + 50 >= curr_nav_tabs.offsetLeft) {
+					curr_nav_tabs.style.visibility = "hidden";
+					curr_nav_tabs_vertical.style.display = "none";
+					options_visible.current = false;
+					curr_nav_settings.style.display = "flex";
+				}
+				else {
+					curr_nav_tabs.style.visibility = "visible";
+					curr_nav_tabs_vertical.style.display = "none";
+					options_visible.current = false;
+					curr_nav_settings.style.display = "none";
+				}
 			}
 		})
 	}, []);
@@ -165,76 +208,50 @@ function App() {
 		<div className="page-body-container">
 
 			{/* Navigation Bar */}
-			<div className="portfolio-header" id="tabs">
-				<div className="portfolio-name-container">
-					<h1 className="portfolio-name">
-						Anna Cristina Gonzalez
-					</h1>
-				</div>
-				<div className="nav-bar-container">
-					<ul className="nav-bar">
-						<li className="nav-tab-container">
+			<div className="nav-bar-container" id="nav-bar-container">
+					<div className="nav-tab-title" id="nav-tab-title">
+						<h1 className="portfolio-name">
+							Anna Cristina Gonzalez
+						</h1>
+					</div>
+					
+					<div className="nav-tab-wrapper" id="nav-tab-wrapper">
+						<div className="nav-tab">
 							<button
-								className="nav-tab"
+								className="nav-link"
 								onClick={() => document.getElementById('about-me')?.scrollIntoView()}>
 								about me
 							</button>
-						</li>
-						<li className="nav-tab-container">
+						</div>
+						<div className="nav-tab">
 							<button
-								className="nav-tab"
+								className="nav-link"
 								onClick={() => document.getElementById('academics')?.scrollIntoView()}>
-								academics
+									education
 							</button>
-						</li>
-						<li className="nav-tab-container">
+						</div>
+						<div className="nav-tab">
 							<button
-								className="nav-tab"
+								className="nav-link"
 								onClick={() => document.getElementById('experience')?.scrollIntoView()}>
-								resume
+									experience
 							</button>
-						</li>
-						<li className="nav-tab-container">
+						</div>
+						<div className="nav-tab">
 							<button
-								className="nav-tab"
+								className="nav-link"
 								onClick={() => document.getElementById('projects')?.scrollIntoView()}>
-								social media
+									socials
 							</button>
-						</li>
-						<li className="nav-tab-container">
+						</div>
+						<div className="nav-tab">
 							<button
-								className="nav-tab"
+								className="nav-link"
 								onClick={() => document.getElementById('socials')?.scrollIntoView()}>
-								analytics
+									analytics
 							</button>
-						</li>
-						<li className="nav-social-container">
-							<a
-								className="media-logo-container"
-								href="https://www.facebook.com/profile.php?id=100033010072606"
-								rel="noreferrer"
-								target="_blank">
-								<svg className="media-logo" version="1.1" viewBox="0 0 32 32">
-									<path
-										d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z">
-									</path>
-								</svg>
-							</a>
-						</li>
-						<li className="nav-social-container">
-							<a
-								className="media-logo-container"
-								href="https://www.instagram.com/Anna_gonzalez01/"
-								rel="noreferrer"
-								target="_blank">
-								<svg className="media-logo" version="1.1" viewBox="-1 -1 32 32">
-									<path
-										d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
-									</path>
-								</svg>
-							</a>
-						</li>
-						<li className="nav-social-container">
+						</div>
+						<div className="nav-tab-media">
 							<a
 								className="media-logo-container"
 								href="https://twitter.com/AnnaGonzalez01"
@@ -242,37 +259,167 @@ function App() {
 								target="_blank">
 								<svg className="media-logo" version="1.1" viewBox="-3 -3 25 25">
 									<path
-										d="M17.316 6.246c0.008 0.162 0.011 0.326 0.011 0.488 0 4.99-3.797 10.742-10.74 10.742-2.133 0-4.116-0.625-5.787-1.697 0.296 0.035 0.596 0.053 0.9 0.053 1.77 0 3.397-0.604 4.688-1.615-1.651-0.031-3.046-1.121-3.526-2.621 0.23 0.043 0.467 0.066 0.71 0.066 0.345 0 0.679-0.045 0.995-0.131-1.727-0.348-3.028-1.873-3.028-3.703 0-0.016 0-0.031 0-0.047 0.509 0.283 1.092 0.453 1.71 0.473-1.013-0.678-1.68-1.832-1.68-3.143 0-0.691 0.186-1.34 0.512-1.898 1.861 2.285 4.644 3.787 7.781 3.945-0.064-0.277-0.097-0.564-0.097-0.861 0-2.084 1.689-3.773 3.774-3.773 1.086 0 2.067 0.457 2.756 1.191 0.859-0.17 1.667-0.484 2.397-0.916-0.282 0.881-0.881 1.621-1.66 2.088 0.764-0.092 1.49-0.293 2.168-0.594-0.506 0.758-1.146 1.422-1.884 1.953z">
+										d={logos.twitter}>
 									</path>
 								</svg>
 							</a>
-						</li>
-						<li className="nav-inquire-contaier">
+						</div>
+						<div className="nav-tab-media">
 							<a
-								className="nav-inquire-link"
+								className="media-logo-container"
+								href="https://www.instagram.com/Anna_gonzalez01/"
+								rel="noreferrer"
+								target="_blank">
+								<svg className="media-logo" version="1.1" viewBox="-1 -1 32 32">
+									<path
+										d={logos.instagram}>
+									</path>
+								</svg>
+							</a>
+						</div>
+						<div className="nav-tab-media">
+							<a
+								className="media-logo-container"
+								href="https://www.facebook.com/profile.php?id=100033010072606"
+								rel="noreferrer"
+								target="_blank">
+								<svg className="media-logo" version="1.1" viewBox="0 0 32 32">
+									<path
+										d={logos.facebook}>
+									</path>
+								</svg>
+							</a>
+						</div>
+						<div className="nav-tab">
+							<a
+								className="inquire-link-container"
 								href="https://mail.google.com/mail/?view=cm&source=mailto&to=annawhereinaustin@gmail.com"
 								rel="noreferrer"
 								target="_blank">
-								<button className="nav-tab-inquire">
-									inquire
+								<button className="inquire-link">inquire</button>
+							</a>
+						</div>
+					</div>
+					<div className="nav-tab" id="nav-hamburger-settings">
+						<button
+							className="icon"
+							onClick={() => {
+								options_visible.current = !options_visible.current;
+								const nav_hamb_opt = document.getElementById("nav-hamburger-options");
+								if(nav_hamb_opt) {
+									if(options_visible.current) {
+										console.log("show");
+										nav_hamb_opt.style.display = "";
+									}
+									else {
+										console.log("hide");
+										nav_hamb_opt.style.display = "none";
+									}
+								}
+							}}>
+							<i className="fa fa-bars"></i>
+						</button>
+					</div>
+				</div>
+				<div className="nav-tab-settings" id="nav-hamburger-options">
+					<div className="nav-tab-wrapper-vertical">
+						<div className="nav-tab">
+							<button
+								className="nav-link-vertical"
+								onClick={() => document.getElementById('about-me')?.scrollIntoView()}>
+								about me
+							</button>
+						</div>
+						<div className="nav-tab">
+							<button
+								className="nav-link-vertical"
+								onClick={() => document.getElementById('academics')?.scrollIntoView()}>
+									education
+							</button>
+						</div>
+						<div className="nav-tab">
+							<button
+								className="nav-link-vertical"
+								onClick={() => document.getElementById('experience')?.scrollIntoView()}>
+									experience
+							</button>
+						</div>
+						<div className="nav-tab">
+							<button
+								className="nav-link-vertical"
+								onClick={() => document.getElementById('projects')?.scrollIntoView()}>
+									socials
+							</button>
+						</div>
+						<div className="nav-tab">
+							<button
+								className="nav-link-vertical"
+								onClick={() => document.getElementById('socials')?.scrollIntoView()}>
+									analytics
+							</button>
+						</div>
+						<div className="nav-tab">
+							<a
+								className="media-logo-container"
+								href="https://twitter.com/AnnaGonzalez01"
+								rel="noreferrer"
+								target="_blank">
+								<button
+									className="nav-link-vertical">
+									twitter
 								</button>
 							</a>
-						</li>
-					</ul>
+						</div>
+						<div className="nav-tab">
+							<a
+								className="media-logo-container"
+								href="https://www.instagram.com/Anna_gonzalez01/"
+								rel="noreferrer"
+								target="_blank">
+								<button
+									className="nav-link-vertical">
+									instagram
+								</button>
+							</a>
+						</div>
+						<div className="nav-tab">
+							<a
+								className="media-logo-container"
+								href="https://www.facebook.com/profile.php?id=100033010072606"
+								rel="noreferrer"
+								target="_blank">
+								<button
+									className="nav-link-vertical">
+									facebook
+								</button>
+							</a>
+						</div>
+					</div>
 				</div>
-			</div>
 
 			{/* Banner and Profile Pictures */}
 			<div className="banner-container">
 				<div className="banner" style={{ backgroundImage: `url(${anna_header_picture})`}}></div>
-				<div className="banner" style={{ backgroundImage: `url(${anna_banner})`}}></div>
-				{/* <div className="banner" style={{ display: "flex", alignItems: "center", textAlign: "center"}}>
-					<p style={{width: "100%"}}>
-						Design,<br/>
-						Create,<br/>
-						Post!<br/>
-					</p>
-				</div> */}
+				{/* <div className="banner" style={{ backgroundImage: `url(${anna_banner})`}}></div> */}
+				<div className="banner">
+					<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+						width="100%" height="100%" viewBox="70 30 375 336"
+						preserveAspectRatio="xMidYMid meet">
+
+						<g transform="translate(0,448) scale(0.1,-0.1)"
+							fill="#000000" stroke="none">
+							{
+								logos.anna_graphic.map((svg_elem) => {
+									return(
+										<path
+											d={svg_elem}>
+										</path>
+									)
+								})
+							}
+						</g>
+					</svg>
+				</div>
 			</div>
 
 			<div className="portfolio-content-container">
@@ -320,22 +467,24 @@ function App() {
 								JSON.stringify({
 									"text": "The University of Texas at Austin",
 									"font-family": "Georgia, 'Times New Roman', Times, serif",
-									"font-size": "4vw",
+									"font-size": "clamp(2vw, 1.5rem, 5.5vw)",
 									"font-color": "#FFFFFF"
 								})
 							}
 							section_content={
 								<>
-									<div className="edu-side-by-side">
-										<div className="edu-image-container">
-											<img className="edu-image" src={require("./content/UT_Austin_Emblem.png")} alt="UT Austin"></img>
-										</div>
-										<div className="edu-desc-container">
-											<div className="edu-desc">
-												I recently received a Bachelor of Science in Political Communications
-												and a Bachelor of Arts in Rhetoric & Writing
-												from the University of Texas at Austin. I graduated with Honors and
-												currently getting ready to apply to Law School.
+									<div className="edu-side-by-side-container">
+										<div className="edu-side-by-side">
+											<div className="edu-image-container">
+												<img className="edu-image" src={require("./content/UT_Austin_Emblem.png")} alt="UT Austin"></img>
+											</div>
+											<div className="edu-desc-container">
+												<p className="edu-desc">
+													I recently received a Bachelor of Science in Political Communications
+													and a Bachelor of Arts in Rhetoric & Writing
+													from the University of Texas at Austin. I graduated with Honors and
+													currently getting ready to apply to Law School.
+												</p>
 											</div>
 										</div>
 									</div>
@@ -387,7 +536,7 @@ function App() {
 								}
 							}
 						}
-						style={{width: "100%"}}>
+						style={{width: "100%", fontSize: "clamp(0.5vw, 5rem, 3vw)"}}>
 						See Resume
 					</button>
 					<div id="resume-section" className="info-section-container" style={{ backgroundColor: "white", opacity: "0", transition: "1s"}}>
@@ -427,7 +576,7 @@ function App() {
 											JSON.stringify({
 												"thumbnail": instagram_reel_jade_restaurant.toString(),
 												"title": "Jade Restaurant",
-												"text": "@jaderestaurantatx: Asian Cuisine 🥟",
+												// "text": "@jaderestaurantatx: Asian Cuisine 🥟",
 												"url": "https://www.instagram.com/reel/CshnJgCPs7a/"
 											}),
 											JSON.stringify({
