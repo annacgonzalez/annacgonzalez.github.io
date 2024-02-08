@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.413e1269.css",
-    "main.js": "/static/js/main.a6020082.js",
+    "main.css": "/static/css/main.78251d25.css",
+    "main.js": "/static/js/main.9cb674cc.js",
+    "static/media/UT_Austin_Emblem.png": "/static/media/UT_Austin_Emblem.2f6530a970ec6c081304.png",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
-    "static/media/UT_Austin_Emblem.png": "/static/media/UT_Austin_Emblem.252e63393a12eb0681dd.png",
     "static/media/Insta_Reel_Lazarus_Brewing.jpg": "/static/media/Insta_Reel_Lazarus_Brewing.2fdf0821a89baa4d385a.jpg",
     "static/media/Insta_Reel_Yelp_Review_2022.jpg": "/static/media/Insta_Reel_Yelp_Review_2022.facbb164c99cb17b9f79.jpg",
     "static/media/Insta_Reel_Crawfish_Boil.jpg": "/static/media/Insta_Reel_Crawfish_Boil.54fd665401316cc2db59.jpg",
@@ -33,13 +33,12 @@
     "static/media/Insta_Reel_Salsa_Limon.jpg": "/static/media/Insta_Reel_Salsa_Limon.9979db2dc9487d601956.jpg",
     "static/media/Insta_Reel_La_Popular.jpg": "/static/media/Insta_Reel_La_Popular.2a4346b4e4ea5a4cf87e.jpg",
     "static/media/Insta_Reel_Ciao_Austin.jpg": "/static/media/Insta_Reel_Ciao_Austin.11b0916f47803b9c806f.jpg",
-    "static/media/Anna_Banner.jpg": "/static/media/Anna_Banner.d870a5f237930486c1ad.jpg",
     "index.html": "/index.html",
-    "main.413e1269.css.map": "/static/css/main.413e1269.css.map",
-    "main.a6020082.js.map": "/static/js/main.a6020082.js.map"
+    "main.78251d25.css.map": "/static/css/main.78251d25.css.map",
+    "main.9cb674cc.js.map": "/static/js/main.9cb674cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.413e1269.css",
-    "static/js/main.a6020082.js"
+    "static/css/main.78251d25.css",
+    "static/js/main.9cb674cc.js"
   ]
 }
