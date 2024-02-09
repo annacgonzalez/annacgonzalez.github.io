@@ -72,37 +72,75 @@ button {
 	/* box-sizing: border-box; */
 }
 
-.banner-tech-section {
-	/* border: 1px yellow dashed; */
+.fadeIn {
+	animation: fadeIn 1.2s both;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeInLeft {
+	animation: fadeInLeft 1.2s both;
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.slideInUp {
+	animation: slideInUp 1.2s both;
+}
+
+@keyframes slideInUp {
+	0% {
+		transform: translateY(50px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+/* .banner-tech-section {
 	width: 40%;
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 33.3%);
-	/* grid-gap: 1rem; */
 }
 
 .banner-tech-icon-container {
-	/* border: 1px red dashed; */
 	text-align: center;
 	font-size: 9.5vw;
 }
 
 .devicon-container {
 	display: flex;
-	/* border: 1px white dotted; */
 	height: 100%;
 	width: 100%;
-	/* padding: 10%; */
 }
 
 .devicon {
 	display: inline-flex;
 	margin: auto;
-	/* border: 1px #92918f dotted; */
 	fill: #0ee2e2;
 	width: 80%;
 	height: 80%;
-}
+} */
 
 /* Portfolio Title */
 .portfolio-name {

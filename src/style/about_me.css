@@ -19,6 +19,10 @@
 	justify-content: center;
 }
 
+.me-image {
+	animation: fadeIn 3s;
+}
+
 .me-desc-container {
 	/* background-color: green; */
 	position: relative;

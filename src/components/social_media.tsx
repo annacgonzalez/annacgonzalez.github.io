@@ -37,12 +37,11 @@ function instagram_embed_foramtter(content_thumbnail:string, content_alt:string,
 					<div className="social-media-content-container" style={parseInlineStyle("text-align:center;")}>
 						<img className="social-media-content" alt={content_alt} src={content_thumbnail}></img>
 					</div>
-					{/* <div className="social-media-caption-container"> */}
+					<div className="social-media-caption-container">
 						<p className="social-media-caption">
 							{content_desc}
 						</p>
-					{/* </div> */}
-					
+					</div>
 				</div>
 			</div>
 		</>
