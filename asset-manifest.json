@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed56dce3.css",
-    "main.js": "/static/js/main.b9e2fc6b.js",
-    "static/media/UT_Austin_Emblem.png": "/static/media/UT_Austin_Emblem.2f6530a970ec6c081304.png",
+    "main.css": "/static/css/main.c26fe173.css",
+    "main.js": "/static/js/main.66d80d55.js",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
     "static/media/Insta_Reel_Lazarus_Brewing.jpg": "/static/media/Insta_Reel_Lazarus_Brewing.2fdf0821a89baa4d385a.jpg",
     "static/media/Insta_Reel_Yelp_Review_2022.jpg": "/static/media/Insta_Reel_Yelp_Review_2022.facbb164c99cb17b9f79.jpg",
     "static/media/Insta_Reel_Crawfish_Boil.jpg": "/static/media/Insta_Reel_Crawfish_Boil.54fd665401316cc2db59.jpg",
+    "static/media/Anna_UNTD.jpg": "/static/media/Anna_UNTD.cbec0f2fcc81b77c6de2.jpg",
     "static/media/Insta_Reel_Cookie_Wookie.jpg": "/static/media/Insta_Reel_Cookie_Wookie.9e1e673fbbdff774ae4f.jpg",
     "static/media/Insta_Reel_Cranky_Grannys_1.jpg": "/static/media/Insta_Reel_Cranky_Grannys_1.02d6bc8fb4fc8acce4cf.jpg",
     "static/media/Insta_Reel_Chilantro.jpg": "/static/media/Insta_Reel_Chilantro.cad106109022769a4a96.jpg",
-    "static/media/Anna_nyc_edge_2_cropped.jpg": "/static/media/Anna_nyc_edge_2_cropped.8dfd86e9daa92953c25d.jpg",
     "static/media/Tiktok_Tonys_Jamaican.webp": "/static/media/Tiktok_Tonys_Jamaican.01eca7d38c6b176a58c9.webp",
-    "static/media/Anna_nyc_edge_1.jpg": "/static/media/Anna_nyc_edge_1.a252ed67b23ce4200e85.jpg",
     "static/media/Insta_Reel_Ten_Ten.jpg": "/static/media/Insta_Reel_Ten_Ten.e58770f385ba192d9bfc.jpg",
     "static/media/Insta_Reel_Tonys_Jamaican.jpg": "/static/media/Insta_Reel_Tonys_Jamaican.39cdda5c0a42a21cdfdb.jpg",
     "static/media/Tiktok_La_Popular.webp": "/static/media/Tiktok_La_Popular.c2b77bc6fac8d92051c9.webp",
@@ -51,11 +49,11 @@
     "static/media/Tiktok_Munch_Munch.webp": "/static/media/Tiktok_Munch_Munch.3270f52405ae4fd7f8f5.webp",
     "static/media/Tiktok_Ciao_Austin.webp": "/static/media/Tiktok_Ciao_Austin.f27148a0b85cb9530c53.webp",
     "index.html": "/index.html",
-    "main.ed56dce3.css.map": "/static/css/main.ed56dce3.css.map",
-    "main.b9e2fc6b.js.map": "/static/js/main.b9e2fc6b.js.map"
+    "main.c26fe173.css.map": "/static/css/main.c26fe173.css.map",
+    "main.66d80d55.js.map": "/static/js/main.66d80d55.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed56dce3.css",
-    "static/js/main.b9e2fc6b.js"
+    "static/css/main.c26fe173.css",
+    "static/js/main.66d80d55.js"
   ]
 }
