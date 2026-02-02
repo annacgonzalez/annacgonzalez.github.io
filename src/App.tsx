@@ -15,12 +15,13 @@ import './style/social_media.css';
 import {InfoSection} from './components/section';
 // import {RelevantCoursework} from './components/relevant_courses';
 import {Experience} from './components/experience';
+import {Academics} from './components/academics';
 // import {Projects} from './components/projects';
 // import {SocialMedia} from './components/social_media';
 import * as logos from './components/logos';
 
 // images to be used
-import anna_header_picture from './content/Anna_nyc_edge_2_cropped.jpg';
+import anna_header_picture from './content/Anna_UNTD.jpg';
 import anna_banner from './content/Anna_Banner.jpg';
 import instagram_reel_jade_restaurant from './content/Insta_Reel_Jade_Restaurant.jpg';
 import instagram_reel_lazarus_brew from './content/Insta_Reel_Lazarus_Brewing.jpg';
@@ -75,11 +76,33 @@ function App() {
 
 	const [resume_cont, setResume_cont] = useState([]);
 
+	const school_arr = [
+		JSON.stringify({
+			"employer": "UNT Dallas College of Law",
+			"location": "Dallas, TX",
+			"duration": "May 2028",
+			"major0": "Juris Doctor Candidate",
+			"description": [
+			]
+		}),
+		JSON.stringify({
+			"employer": "The University of Texas at Austin",
+			"location": "Austin, TX",
+			"duration": "May 2023",
+			"major0": "Bachelor of Arts in Rhetoric & Writing",
+			"major1": "Bachelor of Science in Political Communications",
+			"description": [
+				"GPA: 3.8",
+				"Honors: University Honors (Spring 2020-2023), Moody College of Communication Dean's List (Spring 2023) & Rhetoric & Writing Dean's List (Spring 2023)",
+			]
+		})
+	];
+
 	const resume_arr = [
 		JSON.stringify({
 			"employer": "The Carlson Lawfirm",
 			"location": "Austin, TX",
-			"duration": "July 2023 – Present",
+			"duration": "July 2023 – July 2025",
 			"position": "Paralegal",
 			"description": [
 				"Assist attorneys in personal injury cases.",
@@ -227,9 +250,9 @@ function App() {
 			{/* Navigation Bar */}
 			<div className="nav-bar-container" id="nav-bar-container">
 					<div className="nav-tab-title" id="nav-tab-title">
-						<h1 className="portfolio-name">
+						<p className="portfolio-name" style={{fontFamily:"sans-serif"}}>
 							Anna Cristina Gonzalez
-						</h1>
+						</p>
 					</div>
 					
 					<div className="nav-tab-wrapper" id="nav-tab-wrapper">
@@ -284,7 +307,7 @@ function App() {
 						<div className="nav-tab-media">
 							<a
 								className="media-logo-container"
-								href="https://www.instagram.com/Anna_gonzalez01/"
+								href="https://www.instagram.com/annacristinagonzalez_/"
 								rel="noreferrer"
 								target="_blank">
 								<svg className="media-logo" version="1.1" viewBox="-1 -1 32 32">
@@ -310,10 +333,10 @@ function App() {
 						<div className="nav-tab">
 							<a
 								className="inquire-link-container"
-								href="https://mail.google.com/mail/?view=cm&source=mailto&to=annawhereinaustin@gmail.com"
+								href="https://mail.google.com/mail/?view=cm&source=mailto&to=AnnaGonzalez2@my.unt.edu"
 								rel="noreferrer"
 								target="_blank">
-								<button className="inquire-link">inquire</button>
+								<button className="inquire-link">email me</button>
 							</a>
 						</div>
 					</div>
@@ -390,7 +413,7 @@ function App() {
 						<div className="nav-tab">
 							<a
 								className="media-logo-container"
-								href="https://www.instagram.com/Anna_gonzalez01/"
+								href="https://www.instagram.com/annacristinagonzalez_/"
 								rel="noreferrer"
 								target="_blank">
 								<button
@@ -416,26 +439,15 @@ function App() {
 
 			{/* Banner and Profile Pictures */}
 			<div className="banner-container">
-				<div className="banner fadeInLeft" style={{ backgroundImage: `url(${anna_header_picture})`}}></div>
+				<div className="banner" style={{ backgroundImage: `url(${anna_header_picture})`, backgroundPosition: 'center'}}></div>
 				{/* <div className="banner" style={{ backgroundImage: `url(${anna_banner})`}}></div> */}
 				<div className="banner slideInUp">
-					<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-						width="100%" height="100%" viewBox="70 30 375 336"
-						preserveAspectRatio="xMidYMid meet">
-
-						<g transform="translate(0,448) scale(0.1,-0.1)"
-							fill="#000000" stroke="none">
-							{
-								logos.anna_graphic.map((svg_elem) => {
-									return(
-										<path
-											d={svg_elem}>
-										</path>
-									)
-								})
-							}
-						</g>
-					</svg>
+					<div className="banner-portfolio-name-container">
+						<h1 className="banner-portfolio-name">
+							<span className="banner-portfolio-name-text">Anna C. Gonzalez</span>
+						</h1>
+						<p className="banner-portfolio-description">Creative Projects</p>
+					</div>
 				</div>
 			</div>
 
@@ -449,26 +461,33 @@ function App() {
 						<InfoSection
 							section_title={
 								JSON.stringify({
-									"text": "",
-									"font-family": "",
-									"font-size": ""
+									"text": "About Me",
+									"font-family": "sans-serif",
+									"font-size": "clamp(2vw, 2.5rem, 5.5vw)",
+									"font-color": "#111"
 								})
 							}
 							section_content={
 								<>
 									<div className="me-side-by-side">
-										<div className="me-image-container">
-											<img className="me-image fadeIn" alt="Jan Profile" src={require("./content/Anna_nyc_edge_1.jpg")}></img>
-										</div>
-										<div className="me-desc-container fadeIn">
-											<div>
-												<div className="me-desc" style={{fontWeight: "bold"}}>Anna Cristina Gonzalez</div>
-												<div className="me-desc" style={{fontStyle: "italic"}}>B.S. in Political Communications</div>
-												<div className="me-desc" style={{fontStyle: "italic"}}>B.A. in Rhetoric & Writing</div>
-												<div className="me-desc" style={{fontStyle: "italic"}}>
-													Hello, I am a recent college graduate with degree in Political Communications and Rhetoric & Writing.
-												</div>
-											</div>
+										<div className="me-desc-container">
+											<p className="me-desc">I believe that representation isn’t just a goal—it’s a necessity.</p>
+											<p className="me-desc">
+												<strong>Bridging Worlds</strong>: From the Border to the Bar My journey began in McAllen, Texas, and was shaped by a childhood spent in Rio Bravo, Tamaulipas. This cross-border upbringing instilled in me a deep passion for community and a clear understanding of the power of communication. Today, as a first-generation Latina and 1L student at UNT Dallas College of Law, I am turning that passion into a career of advocacy.
+											</p>
+											<p className="me-desc">
+												<strong>The Mission</strong>: Representation Matters After graduating from the University of Texas at Austin with degrees in Political Communications and Rhetoric & Writing, I realized my true calling: ensuring our communities are seen, heard, and represented. I believe that being bilingual is more than a skill—it is a tool to bridge the gap in our legal system. Everything I do is driven by the goal of making my Latino community proud.
+											</p>
+											<p className="me-desc">
+												<strong>The Creative</strong>: Law Meets Design I’m proof that you don’t have to set aside your creative spark to pursue a JD. During my time as an undergraduate, I fell in love with digital storytelling while working as a social media marketing intern. From producing engaging TikToks and Reels to designing impactful posters and flyers, I specialize in visual communication that cuts through the noise.
+											</p>
+											<p className="me-desc">
+												Beyond the Books When I’m not diving into case law, you can find me:
+											</p>
+											<ul className="me-desc">
+												<li>🐾 Spending time with my dog, Enzo.</li>
+												<li>📚 Getting lost in a new book.🎧 Discovering new music to fuel my study sessions.</li>
+											</ul>
 										</div>
 									</div>
 								</>
@@ -478,33 +497,21 @@ function App() {
 
 					{/* Education Section */}
 					<div id="academics"></div>
-					<div className="info-section-container" style={{backgroundColor: "#C05600"}}>
+					<div className="info-section-container" style={{ backgroundColor: "white", opacity: "1", transition: "1s"}}>
 						<InfoSection
 							section_title={
 								JSON.stringify({
-									"text": "The University of Texas at Austin",
-									"font-family": "Georgia, 'Times New Roman', Times, serif",
+									"text": "Education",
+									"font-family": "sans-serif",
 									"font-size": "clamp(2vw, 2.5rem, 5.5vw)",
-									"font-color": "#FFFFFF"
+									"font-color": "#111"
 								})
 							}
 							section_content={
 								<>
-									<div className="edu-side-by-side-container">
-										<div className="edu-side-by-side">
-											<div className="edu-image-container">
-												<img className="edu-image" src={require("./content/UT_Austin_Emblem.png")} alt="UT Austin"></img>
-											</div>
-											<div className="edu-desc-container">
-												<p className="edu-desc">
-													I recently received a Bachelor of Science in Political Communications
-													and a Bachelor of Arts in Rhetoric & Writing
-													from the University of Texas at Austin. I graduated with Honors and
-													currently getting ready to apply to Law School.
-												</p>
-											</div>
-										</div>
-									</div>
+									<Academics
+										schools={ school_arr }
+									/>
 								</>
 							}
 						/>
@@ -512,6 +519,13 @@ function App() {
 					
 					{/* Experience Section */}
 					<div id="experience"></div>
+					<div className="section-container">
+							<div style={{paddingLeft: "2vw", marginLeft: "1%"}}>
+								<div className="section-title" style={{fontFamily: "sans-serif", fontSize: "clamp(2vw, 2.5rem, 5.5vw)", color: "#111"}}>
+									Experience <i>(press "See Resume" to expand)</i>
+								</div>
+							</div>
+					</div>
 					<button
 						id="show-resume-button"
 						className="show-resume-button"
@@ -581,8 +595,8 @@ function App() {
 						<InfoSection
 							section_title={
 								JSON.stringify({
-									"text": "Insta Reels, Examples...",
-									"font-family": "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+									"text": "Instagram Reels",
+									"font-family": "sans-serif",
 									"font-size": "clamp(2vw, 2.5rem, 5.5vw)"
 								})
 							}
@@ -776,7 +790,7 @@ function App() {
 							section_title={
 								JSON.stringify({
 									"text": "Tiktoks",
-									"font-family": "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+									"font-family": "sans-serif",
 									"font-size": "clamp(2vw, 2.5rem, 5.5vw)"
 								})
 							}
@@ -906,7 +920,7 @@ function App() {
 					</div>
 
 					{/* Social Media */}
-					<div id="socials"></div>
+					{/* <div id="socials"></div>
 					<div className="info-section-container">
 						<InfoSection
 							section_title={
@@ -922,7 +936,7 @@ function App() {
 								</>
 							}
 						/>
-					</div>
+					</div> */}
 
 				</div>
 			</div>

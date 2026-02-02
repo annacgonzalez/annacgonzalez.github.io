@@ -30,7 +30,7 @@ button {
 }
 
 .page-body-container {
-	background-color: #03cfd5;
+	background-color: #FAF6F1;
 	width: 100%;
 }
 
@@ -70,6 +70,44 @@ button {
 	height: 40vw;
 	width: 50%;
 	/* box-sizing: border-box; */
+
+	/* title alignment */
+	display: flex;
+	/* border: 1px solid blue; */
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-portfolio-name-container {
+	text-align: center;
+    /* padding: 40px; */
+    /* border-radius: 8px; */
+
+	/* border: 1px red solid; */
+}
+
+.banner-portfolio-name {
+	font-size: 5rem; /* Large font size for impact */
+    margin: 0;
+    padding: 0;
+    /* line-height: 1; */
+    /* text-transform: uppercase; */
+}
+
+.banner-portfolio-name-text {
+	color: #333; /* Dark gray for the main name */
+    font-weight: 400; /* Lighter weight */
+    letter-spacing: -2px; /* Tighter spacing */
+}
+
+.banner-portfolio-description {
+	font-size: 1.2rem;
+    color: #333; /* Subdued color for less emphasis */
+    margin-top: 10px;
+    letter-spacing: 3px; /* Wide spacing for a modern look */
+    border-top: 1px solid #333; /* A subtle dividing line */
+    padding-top: 10px;
+    /* display: inline-block; */
 }
 
 .fadeIn {
@@ -146,7 +184,8 @@ button {
 .portfolio-name {
 	/* color: #0ee2e2;
 	font-size: calc(2.5vw + 1rem); */
-	height: auto; font-family: sans-serif;
+	height: auto;
+	font-family: sans-serif;
 	font-size: max(1.6vw, 90%);
 	color: white;
 }
@@ -177,6 +216,7 @@ button {
 @media only screen and (max-width: 500px) {
 	.portfolio-name {
 		font-size: 2.5vw;
+		font-family: sans-serif;
 	}
 }
 
@@ -256,6 +296,10 @@ button {
 	.section-header {
 		height: 3rem;
 	} */
+
+	.banner-portfolio-name {
+	font-size: 2.5rem; /* Large font size for impact */
+	}
 	
 }
 
