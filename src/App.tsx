@@ -281,16 +281,16 @@ function App() {
 							<button
 								className="nav-link"
 								onClick={() => document.getElementById('projects')?.scrollIntoView()}>
-									socials
+									projects
 							</button>
 						</div>
-						<div className="nav-tab">
+						{/* <div className="nav-tab">
 							<button
 								className="nav-link"
 								onClick={() => document.getElementById('socials')?.scrollIntoView()}>
 									analytics
 							</button>
-						</div>
+						</div> */}
 						<div className="nav-tab-media">
 							<a
 								className="media-logo-container"
@@ -326,6 +326,19 @@ function App() {
 								<svg className="media-logo" version="1.1" viewBox="0 0 32 32">
 									<path
 										d={logos.facebook}>
+									</path>
+								</svg>
+							</a>
+						</div>
+						<div className="nav-tab-media">
+							<a
+								className="media-logo-container"
+								href="https://www.linkedin.com/in/anna-gonzalez-b2b599196/"
+								rel="noreferrer"
+								target="_blank">
+								<svg className="media-logo" version="1.1" viewBox="0 0 32 32">
+									<path
+										d={logos.linkedin1}>
 									</path>
 								</svg>
 							</a>
@@ -388,16 +401,16 @@ function App() {
 							<button
 								className="nav-link-vertical"
 								onClick={() => document.getElementById('projects')?.scrollIntoView()}>
-									socials
+									projects
 							</button>
 						</div>
-						<div className="nav-tab">
+						{/* <div className="nav-tab">
 							<button
 								className="nav-link-vertical"
 								onClick={() => document.getElementById('socials')?.scrollIntoView()}>
 									analytics
 							</button>
-						</div>
+						</div> */}
 						<div className="nav-tab">
 							<a
 								className="media-logo-container"
