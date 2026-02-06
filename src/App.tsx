@@ -499,7 +499,8 @@ function App() {
 											</p>
 											<ul className="me-desc">
 												<li>🐾 Spending time with my dog, Enzo.</li>
-												<li>📚 Getting lost in a new book.🎧 Discovering new music to fuel my study sessions.</li>
+												<li>📚 Getting lost in a new book.</li>
+												<li>🎧 Discovering new music to fuel my study sessions.</li>
 											</ul>
 										</div>
 									</div>
