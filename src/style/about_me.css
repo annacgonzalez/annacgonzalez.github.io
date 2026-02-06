@@ -68,9 +68,9 @@
 
 @media only screen and (max-width: 1400px) {
 
-	.me-desc-container {
+	/* .me-desc-container {
 		background-color: yellow;
-	}
+	} */
 
 	.me-desc {
 		font-size: clamp(1vw, 2rem, 2vw);
@@ -86,9 +86,9 @@
 /* Responsivity for small-sized window  */
 @media only screen and (max-width: 1000px) {
 
-	.me-desc-container {
+	/* .me-desc-container {
 		background-color: orange;
-	}
+	} */
 
 	.me-side-by-side {
 		margin: 0 4% 0 4%;
@@ -130,9 +130,9 @@
 /* Responsivity for extra-small-sized window */
 @media only screen and (max-width: 350px) {
 
-	.me-desc-container {
+	/* .me-desc-container {
 		background-color: red;
-	}
+	} */
 
 	.me-desc {
 		font-size: clamp(2vw, 1rem, 3vw);

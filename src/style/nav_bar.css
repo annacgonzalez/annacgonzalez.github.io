@@ -194,11 +194,12 @@
 }
 
 .nav-tab-settings {
+	z-index: 99;
 	display: block;
 	position: absolute;
 	right: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	width: 25%;
+	background-color: rgba(0, 0, 0, 0.9);
+	width: 50%;
 	height: auto;
 }
 
@@ -227,12 +228,12 @@
 
 	/* Font */
 	color: white;
-	font-size: clamp(1vw, 2rem, 2vw);
+	font-size: clamp(1vw, 2rem, 5vw);
 }
 
 .nav-link-vertical:hover {
 	/* background-color: rgba(122, 122, 122, 0.5); */
-	font-size: clamp(1.1vw, 2.3rem, 2.1vw);
+	font-size: clamp(1vw, 2.5rem, 5.1vw);
 	font-weight: 500;
 	transition: 0.1s;
 }

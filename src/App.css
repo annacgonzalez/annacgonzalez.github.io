@@ -180,6 +180,10 @@ button {
 	height: 80%;
 } */
 
+/* .nav-tab-title {
+	background-color: red;
+} */
+
 /* Portfolio Title */
 .portfolio-name {
 	/* color: #0ee2e2;
@@ -197,7 +201,7 @@ button {
 	/* border: 1px solid yellow; */
 
 	/* main container of nav-tab */
-	z-index: 99;
+	z-index: 80;
 	position: relative;
 	height: 8rem;
 	max-height: 7vw;
@@ -214,6 +218,7 @@ button {
 }
 
 @media only screen and (max-width: 500px) {
+
 	.portfolio-name {
 		font-size: 2.5vw;
 		font-family: sans-serif;
