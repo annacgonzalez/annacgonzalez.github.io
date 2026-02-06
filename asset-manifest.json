@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee88666d.css",
+    "main.css": "/static/css/main.0e58bd89.css",
     "main.js": "/static/js/main.8ab9f89a.js",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
@@ -49,11 +49,11 @@
     "static/media/Tiktok_Munch_Munch.webp": "/static/media/Tiktok_Munch_Munch.3270f52405ae4fd7f8f5.webp",
     "static/media/Tiktok_Ciao_Austin.webp": "/static/media/Tiktok_Ciao_Austin.f27148a0b85cb9530c53.webp",
     "index.html": "/index.html",
-    "main.ee88666d.css.map": "/static/css/main.ee88666d.css.map",
+    "main.0e58bd89.css.map": "/static/css/main.0e58bd89.css.map",
     "main.8ab9f89a.js.map": "/static/js/main.8ab9f89a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee88666d.css",
+    "static/css/main.0e58bd89.css",
     "static/js/main.8ab9f89a.js"
   ]
 }
