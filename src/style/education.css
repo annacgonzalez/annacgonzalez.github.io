@@ -42,7 +42,7 @@
 .edu-desc {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	/* font-size: max(2vw, 2rem); */
-	font-size: clamp(1.3vw, 2.5rem, 5vw);
+	font-size: clamp(1.3vw, 2.1rem, 4.5vw);
 	margin: 0% 0% 2.5% 0%;
 
 	/* border: 1px blue solid; */
@@ -66,9 +66,9 @@
 /* Resposivity for medium-sized window */
 @media only screen and (max-width: 1400px) {
 
-	/* .edu-side-by-side {
+	.edu-side-by-side {
 		background-color: yellow;
-	} */
+	}
 
 	.edu-desc {
 		font-size: clamp(2.5vw, 1.5rem, 5vw);
@@ -91,9 +91,9 @@
 /* Responsivity for small-sized window  */
 @media only screen and (max-width: 1000px) {
 
-	/* .edu-side-by-side {
+	.edu-side-by-side {
 		background-color: orange;
-	} */
+	}
 
 	.edu-desc {
 		/* font-size: clamp(2vw, 1rem, 4vw); */
@@ -216,7 +216,7 @@
     border-bottom: 0.2vw solid #000000;
     padding-bottom: 0.5vw;
     /* font-size: 1.7rem; */
-    font-size: clamp(1.3vw, 2.5rem, 5vw);
+    font-size: clamp(1.3vw, 2rem, 4.5vw);
     /* color: #ffffff; */
 }
 
@@ -241,6 +241,6 @@
     padding: 0;
     margin: 0% 0% 0% 6%;
     /* font-size: 1.7rem; */
-    font-size: clamp(1.3vw, 2.5rem, 5vw);
+    font-size: clamp(1.3vw, 2rem, 2.5vw);
     /* color: #ffffff; */
 }
