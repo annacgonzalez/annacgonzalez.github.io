@@ -46,6 +46,46 @@
 	/* border: 1px blue solid; */
 }
 
+.image-container {
+	/* background-color: red; */
+	display: flex; /* Activates Flexbox */
+	justify-content: center; /* Centers the images if needed */
+	align-items: center;     /* Centers vertically */
+	gap: 20px; /* Adds space between images */
+	padding: 20px;
+}
+
+.image-item {
+	/* outline: 1px dashed orange; */
+	flex: 1; /* Allows each item to grow equally and occupy one-third of the space */
+	/*max-width: 300px; /* Optional: Sets a max size for large screens */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+	border-radius: 8px; /* Optional: Rounds the corners */
+	overflow: hidden; /* Ensures image corners match container corners */
+}
+
+.image-item img {
+	/* outline: 1px dashed yellow; */
+	width: 100%; /* Makes the image fill its container width */
+	height: auto; /* Maintains aspect ratio */
+	display: block; /* Removes extra space below the image */
+	object-fit: cover; /* Optional: Ensures uniform image sizing even with different aspect ratios */
+	align-items: center;
+}
+
+/* Responsive adjustment for small screens */
+/* @media (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+} */
+
 /* Resposivity for medium-sized window */
 @media only screen and (min-width: 1400px) {
 

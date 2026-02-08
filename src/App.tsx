@@ -22,7 +22,10 @@ import * as logos from './components/logos';
 
 // images to be used
 import anna_header_picture from './content/Anna_UNTD.jpg';
-import anna_banner from './content/Anna_Banner.jpg';
+// import anna_banner from './content/Anna_Banner.jpg';
+import anna_with_friends from './content/Anna_And_Friends.jpg'
+import enzo_with_hat from './content/Enzo_Mex_Hat.jpg'
+import anna_with_boyfriend from './content/Anna_And_Jan_Colorado.jpg'
 import instagram_reel_jade_restaurant from './content/Insta_Reel_Jade_Restaurant.jpg';
 import instagram_reel_lazarus_brew from './content/Insta_Reel_Lazarus_Brewing.jpg';
 import instagram_reel_cranky_granny from './content/Insta_Reel_Cranky_Grannys.jpg';
@@ -100,7 +103,7 @@ function App() {
 
 	const resume_arr = [
 		JSON.stringify({
-			"employer": "The Carlson Lawfirm",
+			"employer": "The Carlson Law Firm",
 			"location": "Austin, TX",
 			"duration": "July 2023 – July 2025",
 			"position": "Paralegal",
@@ -484,24 +487,34 @@ function App() {
 								<>
 									<div className="me-side-by-side">
 										<div className="me-desc-container">
-											<p className="me-desc">I believe that representation isn’t just a goal—it’s a necessity.</p>
 											<p className="me-desc">
-												<strong>Bridging Worlds</strong>: From the Border to the Bar My journey began in McAllen, Texas, and was shaped by a childhood spent in Rio Bravo, Tamaulipas. This cross-border upbringing instilled in me a deep passion for community and a clear understanding of the power of communication. Today, as a first-generation Latina and 1L student at UNT Dallas College of Law, I am turning that passion into a career of advocacy.
+												<strong>Bridging Worlds: From the Border to the Bar</strong><br/>My journey began in McAllen, Texas, and was shaped by a childhood spent in Rio Bravo, Tamaulipas. This cross-border upbringing instilled in me a deep passion for community and a clear understanding of the power of communication. Today, as a first-generation Latina and 1L student at UNT Dallas College of Law, I am turning that passion into a career of advocacy.
 											</p>
 											<p className="me-desc">
-												<strong>The Mission</strong>: Representation Matters After graduating from the University of Texas at Austin with degrees in Political Communications and Rhetoric & Writing, I realized my true calling: ensuring our communities are seen, heard, and represented. I believe that being bilingual is more than a skill—it is a tool to bridge the gap in our legal system. Everything I do is driven by the goal of making my Latino community proud.
+												<strong>The Mission: Representation Matters</strong><br/>After graduating from the University of Texas at Austin with degrees in Political Communications and Rhetoric & Writing, I realized my true calling: ensuring our communities are seen, heard, and represented. I believe that being bilingual is more than a skill, it is a tool to bridge the gap in our legal system. Everything I do is driven by the goal of making my Latino community proud.
 											</p>
 											<p className="me-desc">
-												<strong>The Creative</strong>: Law Meets Design I’m proof that you don’t have to set aside your creative spark to pursue a JD. During my time as an undergraduate, I fell in love with digital storytelling while working as a social media marketing intern. From producing engaging TikToks and Reels to designing impactful posters and flyers, I specialize in visual communication that cuts through the noise.
+												<strong>The Creative: Law Meets Design</strong><br/>I’m proof that you don’t have to set aside your creative spark to pursue a JD. During my time as an undergraduate, I fell in love with digital storytelling while working as a social media marketing intern. From producing engaging TikToks and Reels to designing impactful posters and flyers, I specialize in visual communication that cuts through the noise.
 											</p>
 											<p className="me-desc">
-												Beyond the Books When I’m not diving into case law, you can find me:
+												<strong>Beyond the Books:</strong> When I’m not diving into case law, you can find me:
 											</p>
 											<ul className="me-desc">
 												<li>🐾 Spending time with my dog, Enzo.</li>
 												<li>📚 Getting lost in a new book.</li>
 												<li>🎧 Discovering new music to fuel my study sessions.</li>
 											</ul>
+										</div>
+									</div>
+									<div className="image-container">
+										<div className="image-item" style={{maxWidth: "371px"}}>
+											<img src={enzo_with_hat} alt="My dog Enzo in a funny Mexican hat."></img>
+										</div>
+										<div className="image-item" style={{maxWidth: "300px"}}>
+											<img src={anna_with_friends} alt="My friends and I at a local winery"></img>
+										</div>
+										<div className="image-item" style={{maxWidth: "535px"}}>
+											<img src={anna_with_boyfriend} alt="My boyfriend and I visiting Denver, Colorado"></img>
 										</div>
 									</div>
 								</>
