@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e58bd89.css",
-    "main.js": "/static/js/main.9f8bdf42.js",
+    "main.css": "/static/css/main.536e3d0e.css",
+    "main.js": "/static/js/main.898d0a7d.js",
+    "static/media/Anna_And_Friends.jpg": "/static/media/Anna_And_Friends.6610d9cb91a1236a3e01.jpg",
+    "static/media/Anna_And_Jan_Colorado.jpg": "/static/media/Anna_And_Jan_Colorado.240247ac38d155883b04.jpg",
+    "static/media/Enzo_Mex_Hat.jpg": "/static/media/Enzo_Mex_Hat.4be3e4ed05e7e562b0a2.jpg",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
     "static/media/Insta_Reel_Lazarus_Brewing.jpg": "/static/media/Insta_Reel_Lazarus_Brewing.2fdf0821a89baa4d385a.jpg",
@@ -49,11 +52,11 @@
     "static/media/Tiktok_Munch_Munch.webp": "/static/media/Tiktok_Munch_Munch.3270f52405ae4fd7f8f5.webp",
     "static/media/Tiktok_Ciao_Austin.webp": "/static/media/Tiktok_Ciao_Austin.f27148a0b85cb9530c53.webp",
     "index.html": "/index.html",
-    "main.0e58bd89.css.map": "/static/css/main.0e58bd89.css.map",
-    "main.9f8bdf42.js.map": "/static/js/main.9f8bdf42.js.map"
+    "main.536e3d0e.css.map": "/static/css/main.536e3d0e.css.map",
+    "main.898d0a7d.js.map": "/static/js/main.898d0a7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e58bd89.css",
-    "static/js/main.9f8bdf42.js"
+    "static/css/main.536e3d0e.css",
+    "static/js/main.898d0a7d.js"
   ]
 }
