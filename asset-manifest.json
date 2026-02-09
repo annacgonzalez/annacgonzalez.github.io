@@ -1,12 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.536e3d0e.css",
-    "main.js": "/static/js/main.898d0a7d.js",
+    "main.js": "/static/js/main.9dd12314.js",
+    "static/media/cazuelas_de_abuela.png": "/static/media/cazuelas_de_abuela.55922842d9d58fad35dc.png",
     "static/media/Anna_And_Friends.jpg": "/static/media/Anna_And_Friends.6610d9cb91a1236a3e01.jpg",
     "static/media/Anna_And_Jan_Colorado.jpg": "/static/media/Anna_And_Jan_Colorado.240247ac38d155883b04.jpg",
+    "static/media/cooking_journal.png": "/static/media/cooking_journal.5dba7699e5cbe1fb969a.png",
     "static/media/Enzo_Mex_Hat.jpg": "/static/media/Enzo_Mex_Hat.4be3e4ed05e7e562b0a2.jpg",
+    "static/media/yelp_chilantro.png": "/static/media/yelp_chilantro.59ca8474e6ecdb37a52e.png",
+    "static/media/ccr_legal_brochure.png": "/static/media/ccr_legal_brochure.f76d1be511de956cce2d.png",
+    "static/media/yelp_burrata_house.png": "/static/media/yelp_burrata_house.10924d895e1d11a9d2b7.png",
+    "static/media/yelp_keepers.png": "/static/media/yelp_keepers.71bc78901cc73ba5c432.png",
+    "static/media/yelp_hoodoo.png": "/static/media/yelp_hoodoo.6b9c5fda254ecededd25.png",
+    "static/media/historian_statement.png": "/static/media/historian_statement.a090cb31c0deff8e1bfe.png",
+    "static/media/yelp_florecita.png": "/static/media/yelp_florecita.3a004b6d7bb0d3728407.png",
+    "static/media/yelp_tenten.png": "/static/media/yelp_tenten.ef3068179ac16595df7f.png",
+    "static/media/yelp_via313.png": "/static/media/yelp_via313.c94718954fe265190716.png",
     "static/media/Insta_Reel_Taquero_Mucho.jpg": "/static/media/Insta_Reel_Taquero_Mucho.406aa3e18bfa566ad58b.jpg",
     "static/media/Insta_Reel_Fairways.jpg": "/static/media/Insta_Reel_Fairways.5ea31aff0bcb7f68b30e.jpg",
+    "static/media/austin_signature_event.png": "/static/media/austin_signature_event.ef6bae46049325e34238.png",
     "static/media/Insta_Reel_Lazarus_Brewing.jpg": "/static/media/Insta_Reel_Lazarus_Brewing.2fdf0821a89baa4d385a.jpg",
     "static/media/Insta_Reel_Yelp_Review_2022.jpg": "/static/media/Insta_Reel_Yelp_Review_2022.facbb164c99cb17b9f79.jpg",
     "static/media/Insta_Reel_Crawfish_Boil.jpg": "/static/media/Insta_Reel_Crawfish_Boil.54fd665401316cc2db59.jpg",
@@ -53,10 +65,10 @@
     "static/media/Tiktok_Ciao_Austin.webp": "/static/media/Tiktok_Ciao_Austin.f27148a0b85cb9530c53.webp",
     "index.html": "/index.html",
     "main.536e3d0e.css.map": "/static/css/main.536e3d0e.css.map",
-    "main.898d0a7d.js.map": "/static/js/main.898d0a7d.js.map"
+    "main.9dd12314.js.map": "/static/js/main.9dd12314.js.map"
   },
   "entrypoints": [
     "static/css/main.536e3d0e.css",
-    "static/js/main.898d0a7d.js"
+    "static/js/main.9dd12314.js"
   ]
 }
