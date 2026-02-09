@@ -17,7 +17,8 @@ import {InfoSection} from './components/section';
 import {Experience} from './components/experience';
 import {Academics} from './components/academics';
 // import {Projects} from './components/projects';
-// import {SocialMedia} from './components/social_media';
+import { SocialMedia } from './components/social_media';
+import { CreativeProjects } from './components/creative_projects';
 import * as logos from './components/logos';
 
 // images to be used
@@ -71,7 +72,19 @@ import tiktok_the_well from './content/Tiktok_The_Well.webp';
 import tiktok_tonys_jamaican from './content/Tiktok_Tonys_Jamaican.webp';
 import tiktok_via313 from './content/Tiktok_Via313.webp';
 import tiktok_peached_tortilla from './content/Tiktok_Peached_Tortilla.webp';
-import { SocialMedia } from './components/social_media';
+import project_historian_stat from './content/historian_statement.png';
+import project_cazuelas_abuela from './content/cazuelas_de_abuela.png';
+import project_yelp_keepers from './content/yelp_keepers.png';
+import project_yelp_burrata_house from './content/yelp_burrata_house.png';
+import project_ccr_legal from './content/ccr_legal_brochure.png';
+import project_cooking_journal from './content/cooking_journal.png';
+import project_austin_signatures from './content/austin_signature_event.png';
+import project_yelp_hoodoo from './content/yelp_hoodoo.png';
+import project_yelp_tenten from './content/yelp_tenten.png';
+import project_yelp_via313 from './content/yelp_via313.png';
+import project_yelp_florecita from './content/yelp_florecita.png';
+import project_yelp_chilantro from './content/yelp_chilantro.png';
+
 
 function App() {
 
@@ -946,24 +959,103 @@ function App() {
 						/>
 					</div>
 
-					{/* Social Media */}
-					{/* <div id="socials"></div>
-					<div className="info-section-container">
+					<div className="info-section-container" style={{backgroundColor: "#ffffff"}}>
 						<InfoSection
 							section_title={
 								JSON.stringify({
-									"text": "How it works",
-									"font-family": "",
+									"text": "Creative Projects",
+									"font-family": "sans-serif",
 									"font-size": "clamp(2vw, 2.5rem, 5.5vw)"
 								})
 							}
 							section_content={
-								<>
-									<p style={{width: "100%", textAlign: "center"}}>[insert graphics here]</p>
-								</>
+								<CreativeProjects
+									media={
+										[
+											JSON.stringify({
+												"thumbnail": project_historian_stat.toString(),
+												"title": "Historian Statement",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_cooking_journal.toString(),
+												"title": "Anna's Cooking Journal",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_burrata_house.toString(),
+												"title": "Yelp Burrata House Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_keepers.toString(),
+												"title": "Yelp Keepers Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_chilantro.toString(),
+												"title": "Yelp Chilantro Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_florecita.toString(),
+												"title": "Yelp Florecita & Wonderlust Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_hoodoo.toString(),
+												"title": "Yelp Hoodoo Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_tenten.toString(),
+												"title": "Yelp TenTen Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_yelp_via313.toString(),
+												"title": "Yelp Via313 Event",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_cazuelas_abuela.toString(),
+												"title": "Laz Cazuelas de Abuela Homemade Candles",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_ccr_legal.toString(),
+												"title": "CCR Legal Business Brochure",
+												"text": "",
+												"url": ""
+											}),
+											JSON.stringify({
+												"thumbnail": project_austin_signatures.toString(),
+												"title": "",
+												"text": "",
+												"url": ""
+											}),
+											// JSON.stringify({
+											// 	"thumbnail": .toString(),
+											// 	"title": "",
+											// 	"text": "description here...",
+											// 	"url": ""
+											// }),
+										]
+									}
+								/>
 							}
 						/>
-					</div> */}
+					</div>
 
 				</div>
 			</div>
